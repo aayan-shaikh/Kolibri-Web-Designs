@@ -1,0 +1,587 @@
+/* main.scss improvements */
+@use "../abstracts" as *;
+@use "../base/" as *;
+
+body {
+    font-family: $heading-font;
+    /* &::before { */
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(
+            circle at 75% 30%,
+            rgba($primary, 0.08) 0%,
+            transparent 30%
+        ),
+        linear-gradient(to bottom right, transparent 60%, rgba($accent, 0.05));
+    background-color: $secondary;
+    animation: gradientPulse 16s ease infinite alternate;
+    /* } */
+
+    color: black;
+    scroll-behavior: smooth; /*For bookmark links*/
+    font-size: 16px; // Base font size
+    overflow-x: hidden; // Prevent horizontal scrolling
+}
+
+h1,
+p {
+    color: $text;
+}
+
+@mixin section-style {
+    .heading-toptitle {
+        margin: auto;
+        color: lighten($secondary, 40%);
+
+        text-align: center;
+    }
+    display: flex;
+    padding-inline: 4rem;
+    align-items: center;
+    h1 {
+    }
+
+    @include responsive(laptop) {
+        padding-inline: 2rem;
+        h1 {
+            outline: lime;
+            text-align: left;
+        }
+    }
+
+    @include responsive(tablet) {
+        flex-direction: column;
+        padding-inline: 1.5rem;
+    }
+
+    @include responsive(mobile) {
+        padding-inline: 1rem;
+    }
+
+    h1 {
+        flex: 1;
+        margin-bottom: 15px;
+        text-align: center;
+        color: $text;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+        max-width: 600px;
+        object-fit: cover;
+    }
+
+    p {
+        margin-bottom: 30px;
+        color: $text;
+    }
+
+    .secondary-btn {
+        margin-left: 30px;
+
+        @include responsive(mobile) {
+            margin-left: 0;
+            margin-top: 15px;
+        }
+    }
+}
+
+#hero {
+    @include section-style;
+    min-height: 80vh;
+    margin-top: 4rem;
+
+    @include responsive(laptop) {
+        min-height: 70vh;
+    }
+    h1 {
+        text-align: left;
+    }
+
+    @include responsive(tablet) {
+        min-height: 90vh;
+        margin-top: 6rem;
+    }
+
+    @include responsive(mobile) {
+        min-height: auto;
+        h1 {
+            text-align: left;
+        }
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .primary-btn {
+        /* outline: 1px solid lime; */
+        outline: 1px solid lighten($primary, 5%);
+        box-shadow: 0 3px 8px $primary;
+        &:hover {
+            box-shadow: 0 5px 5px $primary;
+        }
+    }
+    .secondary-btn {
+        outline: 1px solid lighten($accent, 5%);
+        box-shadow: 0 3px 8px $accent;
+        &:hover {
+            box-shadow: 0 5px 5px $accent;
+        }
+    }
+}
+
+#what-we-do {
+    @include section-style;
+    margin-top: 3rem;
+    text-align: center;
+    align-items: end;
+    flex-direction: column;
+
+    h1 {
+        margin-left: auto;
+    }
+
+    .text {
+        width: 60%;
+        margin-inline: auto;
+
+        @include responsive(tablet) {
+            width: 80%;
+        }
+
+        @include responsive(mobile) {
+            width: 100%;
+            flex-direction: row;
+        }
+    }
+
+    .heading-toptitle {
+        margin: auto;
+        color: lighten($secondary, 40%);
+
+        text-align: center;
+    }
+}
+
+.features-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    gap: 50px;
+
+    @include responsive(laptop) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    @include responsive(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    @include responsive(mobile) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.grid-content {
+    margin-inline: 0;
+    padding-inline: 0;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $text;
+    background: linear-gradient($accent, darken($accent, 10%));
+    background-size: 100% 200%;
+    background-position: top;
+    box-shadow: 0px 0px 10px darken($accent, 10%);
+    transition: all 0.5s ease-in-out;
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: left;
+
+    @include responsive(mobile) {
+        padding: 1.5rem;
+    }
+
+    &:hover {
+        box-shadow: 4px 10px 10px darken($accent, 30%);
+        background-position: bottom;
+    }
+
+    h3 {
+        font-size: 2rem;
+
+        @include responsive(mobile) {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .grid-item-icon {
+        width: 50px;
+        display: block;
+        position: relative;
+        top: -5%;
+        left: -4%;
+        fill: $text;
+    }
+
+    .grid-cta {
+        padding: 1rem;
+
+        @include responsive(mobile) {
+            padding: 0.75rem;
+            width: 100%;
+        }
+    }
+}
+
+#what-we-offer {
+    .heading-toptitle {
+        margin: auto;
+        color: lighten($secondary, 40%);
+
+        text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    padding-inline: 4rem;
+    margin-inline: 4rem;
+    gap: 0rem;
+
+    @include responsive(laptop) {
+        padding-inline: 2rem;
+        margin-inline: 2rem;
+    }
+
+    @include responsive(tablet) {
+        padding-inline: 1.5rem;
+        margin-inline: 1.5rem;
+    }
+
+    @include responsive(mobile) {
+        padding-inline: 1rem;
+        margin-inline: 0;
+    }
+
+    .heading-toptitle {
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .offer-text {
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 4rem;
+
+        @include responsive(mobile) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .list-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+
+        @include responsive(laptop) {
+            gap: 1.5rem;
+        }
+
+        img {
+            max-width: 50%;
+            max-height: 50%;
+            order: 1;
+
+            @include responsive(tablet) {
+                max-width: 70%;
+                margin: 0 auto 2rem;
+            }
+
+            @include responsive(mobile) {
+                max-width: 100%;
+                order: 1;
+            }
+        }
+
+        .offering-grid {
+            order: 2;
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+            margin-inline: 4rem;
+
+            @include responsive(laptop) {
+                margin-inline: 2rem;
+            }
+
+            @include responsive(tablet) {
+                margin-inline: 1rem;
+                order: 2;
+            }
+
+            @include responsive(mobile) {
+                margin-inline: 0;
+            }
+
+            .grid-item {
+                background: linear-gradient($hb-blue, darken($hb-blue, 10%));
+                box-shadow: 0px 0px 10px darken($hb-blue, 10%);
+                transition: all 0.3s;
+
+                &:hover {
+                    box-shadow: 4px 10px 10px lighten($hb-blue, 10%);
+                }
+
+                display: flex;
+                justify-content: start;
+                flex-direction: row;
+                align-items: center;
+
+                .grid-heading {
+                    width: 100%;
+                }
+
+                .grid-item-icon {
+                    margin-right: 2rem;
+                    position: static;
+                    display: block;
+
+                    @include responsive(mobile) {
+                        margin-right: 1rem;
+                    }
+                }
+
+                .grid-content {
+                    text-align: left;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        @include responsive(tablet) {
+            flex-direction: column;
+        }
+    }
+}
+
+#performance {
+    @include section-style;
+    margin-top: 6rem;
+    padding-inline: 9rem;
+    flex-direction: column;
+
+    @include responsive(laptop) {
+        padding-inline: 4rem;
+        margin-top: 4rem;
+    }
+
+    @include responsive(tablet) {
+        padding-inline: 2rem;
+        margin-top: 3rem;
+    }
+
+    @include responsive(mobile) {
+        padding-inline: 1rem;
+        margin-top: 2rem;
+    }
+
+    h1,
+    p {
+        text-align: center;
+    }
+
+    .performance-grid {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        @include responsive(tablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include responsive(mobile) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .grid-item {
+        .grid-item-icon {
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        flex: 1;
+        max-width: fit-content;
+        background: linear-gradient(
+            lighten($secondary, 30%),
+            lighten($secondary, 20%)
+        );
+        box-shadow: 0px 0px 10px lighten($secondary, 10%);
+        transition: all 0.3s;
+
+        @include responsive(tablet) {
+            min-width: 45%;
+        }
+
+        @include responsive(mobile) {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &:hover {
+            box-shadow: 4px 6px 10px lighten($secondary, 10%);
+        }
+    }
+}
+
+#cta {
+    background: linear-gradient(
+        135deg,
+        rgba($secondary, 0.98) 0%,
+        darken($secondary, 5%) 100%
+    );
+    padding: 4rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    margin-top: 50px;
+    margin-bottom: -50px;
+
+    // Dynamic floating elements
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        filter: blur(30px);
+        opacity: 0.15;
+    }
+
+    &::before {
+        background: $primary;
+        width: 150px;
+        height: 150px;
+        top: -50px;
+        left: -50px;
+        animation: float 2s ease-in-out infinite alternate;
+    }
+
+    &::after {
+        background: $accent;
+        width: 200px;
+        height: 200px;
+        bottom: -80px;
+        right: -80px;
+        animation: float 16s ease-in-out infinite alternate-reverse;
+    }
+
+    #cta__title {
+        color: $text;
+
+        font-size: clamp(1.5rem, 4vw, 2.25rem);
+        line-height: 1.4;
+        margin-bottom: 2rem;
+        max-width: 25ch;
+        margin-inline: auto;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, $primary, $accent);
+            margin: 1.5rem auto 0;
+            transform: scaleX(0);
+            transform-origin: center;
+            animation: scaleIn 0.8s 0.3s ease-out forwards;
+        }
+    }
+}
+#cta__button,
+.cta__button {
+    background: linear-gradient(90deg, $primary 0%, lighten($primary, 8%) 100%);
+    color: $text;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba($primary, 0.3);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(white, 0.2) 50%,
+            transparent 100%
+        );
+        transition: left 0.6s ease;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba($primary, 0.4);
+
+        &::before {
+            left: 100%;
+        }
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 10px rgba($primary, 0.4);
+    }
+}
+
+// Animations
+@keyframes float {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(20px, -20px);
+    }
+}
+
+@keyframes scaleIn {
+    to {
+        transform: scaleX(1);
+    }
+}
