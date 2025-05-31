@@ -1,211 +1,250 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kolibri</title>
+        <link rel="stylesheet" href="scss/main.scss" />
+    </head>
+    <body>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kolibri</title>
-    <link rel="stylesheet" href="/_site/scss/main.css" />
-</head>
+<!-- NEW NAV -->
 
-<body>
+<nav class="navbar">
+  <div class="navbar__container">
+    <a href="/" class="navbar__logo">
+      <span class="navbar__logo-icon"><img src="../assets/Kolibri Logo White Text.png" height="50px" alt=""></span>
+      Kolibri
+    </a>
 
-    <!-- NEW NAV -->
+    <ul class="navbar__menu">
+      <li><a href="/" class="navbar__menu-link active">Home</a></li>
+      <li><a href="./services.html" class="navbar__menu-link">Services</a></li>
+      <li><a href="./portfolio.html" class="navbar__menu-link">Portfolio</a></li>
+      <li><a href="about.html" class="navbar__menu-link">About</a></li>
+      <!-- <li><a href="/blog" class="navbar__menu-link">Blog</a></li> -->
+      <li><a href="./contact.html" class="navbar__menu-link">Contact</a></li>
+    </ul>
 
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/" class="navbar__logo">
-                <span class="navbar__logo-icon">
-                    <img src="../assets/Kolibri Logo White Text.png" height="50px" alt="Kolibri Logo">
+    <div class="navbar__cta">
+        <a href="./contact.html">
+            <button class="nav-btn">Get a Quote</button>
+        </a>
+    </div>
+
+    <button class="navbar__hamburger" aria-label="Menu">
+      <span class="navbar__hamburger-line"></span>
+      <span class="navbar__hamburger-line"></span>
+      <span class="navbar__hamburger-line"></span>
+    </button>
+  </div>
+</nav>
+        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+        <section id="hero">
+
+
+            <div id="hero-text">
+                <span class="heading-toptitle">
+                    Custom Designs, Custom Coded
                 </span>
-                Kolibri
-            </a>
-
-            <ul class="navbar__menu">
-                <li><a href="/" class="navbar__menu-link active">Home</a></li>
-                <li><a href="./services.html" class="navbar__menu-link">Services</a></li>
-                <li><a href="./portfolio.html" class="navbar__menu-link">Portfolio</a></li>
-                <li><a href="about.html" class="navbar__menu-link">About</a></li>
-                <li><a href="./contact.html" class="navbar__menu-link">Contact</a></li>
-            </ul>
-
-            <div class="navbar__cta">
-                <a href="./contact.html">
-                    <button class="nav-btn">Get a Quote</button>
-                </a>
+                <h1>Small Business Web Designer Колибри (Kolibri)</h1>
+                <p>
+                    No page builders or WordPress. We offer 100% hand-coded
+                    websites with superior results starting at RUB465/mo as well
+                    as Google Ads and SEO services.
+                </p>
+                <button class="primary-btn">Get Started</button>
+                <button class="secondary-btn">About Us</button>
             </div>
+            <img id="hero-img" src="../assets/hero-bird.png"></img>
+        </section>
 
-            <button class="navbar__hamburger" aria-label="Menu">
-                <span class="navbar__hamburger-line"></span>
-                <span class="navbar__hamburger-line"></span>
-                <span class="navbar__hamburger-line"></span>
-            </button>
-        </div>
-    </nav>
-    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
-    <section id="hero">
-
-
-        <div id="hero-text">
-            <span class="heading-toptitle">
-                Custom Designs, Custom Coded
-            </span>
-            <h1>Small Business Web Designer Колибри (Kolibri)</h1>
-            <p>
-                No page builders or WordPress. We offer 100% hand-coded
-                websites with superior results starting at RUB465/mo as well
-                as Google Ads and SEO services.
+        <section id="what-we-do">
+            <span class="heading-toptitle"> What we do </span>
+            <h1>Never worry about your website every again</h1>
+            <p class="text">
+                At Kolibri Web Designs, we specialize in small business web
+                design and development for clients anywhere in Russia and
+                Eastern Europe. Every line of code is written by hand to ensure
+                the best performance and make Google happy, which helps bring in
+                more customers to your site and bring more revenue to your
+                business. We also manage the edits for you and will never leave
+                you high and dry. Our goal is to create long term relationships
+                with our clients and see them grow over time.
             </p>
-            <button class="primary-btn">Get Started</button>
-            <button class="secondary-btn">About Us</button>
-        </div>
-        <img id="hero-img" src="../assets/hero-bird.png"></img>
-    </section>
+            <div class="features-grid">
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg
+                            class="grid-item-icon"
+                            xmlns="http://www.w3.org/2000/svg"
 
-    <section id="what-we-do">
-        <span class="heading-toptitle"> What we do </span>
-        <h1>Never worry about your website every again</h1>
-        <p class="text">
-            At Kolibri Web Designs, we specialize in small business web
-            design and development for clients anywhere in Russia and
-            Eastern Europe. Every line of code is written by hand to ensure
-            the best performance and make Google happy, which helps bring in
-            more customers to your site and bring more revenue to your
-            business. We also manage the edits for you and will never leave
-            you high and dry. Our goal is to create long term relationships
-            with our clients and see them grow over time.
-        </p>
-        <div class="features-grid">
-            <div class="grid-item">
-                <span class="grid-item-icon">
-                    <svg class="grid-item-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                        class="bi bi-tablet" viewBox="0 0 16 16">
-                        <path
-                            d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
-                    </svg>
-                </span>
-                <h3 class="grid-heading">Mobile First Design</h3>
-                <p class="grid-content">
-                    We start building your site for mobile devices first
-                    making sure the code is as lean and optimized with no
-                    bloated waste and makes the site even more responsive.
-                </p>
-                <button class="grid-cta">Get Started</button>
+                            fill="currentColor"
+                            class="bi bi-tablet"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                            />
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">Mobile First Design</h3>
+                    <p class="grid-content">
+                        We start building your site for mobile devices first
+                        making sure the code is as lean and optimized with no
+                        bloated waste and makes the site even more responsive.
+                    </p>
+                    <button class="grid-cta">Get Started</button>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-phone"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                            />
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">Fully Responsive</h3>
+                    <p class="grid-content">
+                        Your website will fit all mobile screens sizes, tablets,
+                        and desktop sizes so visitors can access your site from
+                        anywhere and see a beautiful site no matter the screen
+                        size.
+                    </p>
+                    <button class="grid-cta">Get Started</button>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-speedometer2"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.98 7.98 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"
+                            />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">Optimized Page Speed</h3>
+                    <p class="grid-content">
+                        If your site takes more than 3 seconds to load you can
+                        lose up to 50% your traffic because it took too long.
+                        Our sites load 1 second or less ensuring everyone that
+                        visits your site reaches it.
+                    </p>
+                    <button class="grid-cta">More About Page Speed</button>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-search"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                            />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">SEO Services</h3>
+                    <p class="grid-content">
+                        We have an in-house SEO specialist who understands local
+                        SEO and how to rank in your local market with plenty of
+                        case studies to show results and monthly reports.
+                    </p>
+                    <button class="grid-cta">More About SEO</button>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-geo-alt"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                            />
+                            <path
+                                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                            />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">Based In Russia</h3>
+                    <p class="grid-content">
+                        We do not hire cheap overseas developers. We are mostly
+                        based in  and work 100% remote from home.
+                    </p>
+                    <button class="grid-cta">More About Us</button>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-hand-index" viewBox="0 0 16 16">
+                          <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046zm2.094 2.025"/>
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">Hand Crafted Websites</h3>
+                    <p class="grid-content">
+                        We do not hire cheap overseas developers. We are mostly
+                        based in  and work 100% remote from home.
+                    </p>
+                    <button class="grid-cta">More About Us</button>
+                </div>
             </div>
+        </section>
 
-            <div class="grid-item">
-                <span class="grid-item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                        <path
-                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
-                    </svg>
-                </span>
-                <h3 class="grid-heading">Fully Responsive</h3>
-                <p class="grid-content">
-                    Your website will fit all mobile screens sizes, tablets,
-                    and desktop sizes so visitors can access your site from
-                    anywhere and see a beautiful site no matter the screen
-                    size.
-                </p>
-                <button class="grid-cta">Get Started</button>
-            </div>
+        <section id="what-we-offer">
 
-            <div class="grid-item">
-                <span class="grid-item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-speedometer2"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z" />
-                        <path fill-rule="evenodd"
-                            d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.98 7.98 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3" />
-                    </svg>
-                </span>
-                <h3 class="grid-heading">Optimized Page Speed</h3>
-                <p class="grid-content">
-                    If your site takes more than 3 seconds to load you can
-                    lose up to 50% your traffic because it took too long.
-                    Our sites load 1 second or less ensuring everyone that
-                    visits your site reaches it.
-                </p>
-                <button class="grid-cta">More About Page Speed</button>
-            </div>
-
-            <div class="grid-item">
-                <span class="grid-item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                    </svg>
-                </span>
-                <h3 class="grid-heading">SEO Services</h3>
-                <p class="grid-content">
-                    We have an in-house SEO specialist who understands local
-                    SEO and how to rank in your local market with plenty of
-                    case studies to show results and monthly reports.
-                </p>
-                <button class="grid-cta">More About SEO</button>
-            </div>
-
-            <div class="grid-item">
-                <span class="grid-item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                    </svg>
-                </span>
-                <h3 class="grid-heading">Based In Russia</h3>
-                <p class="grid-content">
-                    We do not hire cheap overseas developers. We are mostly
-                    based in and work 100% remote from home.
-                </p>
-                <button class="grid-cta">More About Us</button>
-            </div>
-
-            <div class="grid-item">
-                <span class="grid-item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-hand-index"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046zm2.094 2.025" />
-                    </svg>
-                </span>
-                <h3 class="grid-heading">Hand Crafted Websites</h3>
-                <p class="grid-content">
-                    We do not hire cheap overseas developers. We are mostly
-                    based in and work 100% remote from home.
-                </p>
-                <button class="grid-cta">More About Us</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="what-we-offer">
-
-        <span class="heading-toptitle"> What we offer </span>
-        <h1>Websites Starting At ₽0 Down And ₽1865 Per Month</h1>
-        <p class="offer-text">
-            We offer $0 down for a standard 5 page small business website.
-            If you need more than that then we have to do custom pricing
-            based on the scope of work, number of additional pages, and time
-            involved. 12 month minimum contract. Includes design,
-            development, hosting, unlimited edits, 24/7 support, and
-            lifetime updates.
-        </p>
-        <div class="list-container">
+            <span class="heading-toptitle"> What we offer </span>
+            <h1>Websites Starting At ₽0 Down And ₽1865 Per Month</h1>
+            <p class="offer-text">
+                We offer $0 down for a standard 5 page small business website.
+                If you need more than that then we have to do custom pricing
+                based on the scope of work, number of additional pages, and time
+                involved. 12 month minimum contract. Includes design,
+                development, hosting, unlimited edits, 24/7 support, and
+                lifetime updates.
+            </p>
+            <div class="list-container">
             <!-- <img src="../assets/hero-bird.png" alt=""> -->
             <div class="offering-grid">
                 <div class="grid-item">
                     <span class="grid-item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
-                            viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-check-circle"
+                            viewBox="0 0 16 16"
+                        >
                             <path
-                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+                            />
                         </svg>
                     </span>
                     <h3 class="grid-heading">100% Secure</h3>
@@ -217,11 +256,19 @@
 
                 <div class="grid-item">
                     <span class="grid-item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
-                            viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-check-circle"
+                            viewBox="0 0 16 16"
+                        >
                             <path
-                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+                            />
                         </svg>
                     </span>
                     <h3 class="grid-heading">Custom Designed</h3>
@@ -233,28 +280,44 @@
 
                 <div class="grid-item">
                     <span class="grid-item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
-                            viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-check-circle"
+                            viewBox="0 0 16 16"
+                        >
                             <path
-                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+                            />
                         </svg>
                     </span>
                     <h3 class="grid-heading">100 PageSpeed Scores</h3>
                     <p class="grid-content">
                         Our sites have zero bloat, zero waste, and built with
-                        purpose so we get perfect 98 to 100/100 speed scores with
+                        purpose so we get perfect 98-100/100 speed scores with
                         Google.
                     </p>
                 </div>
 
                 <div class="grid-item">
                     <span class="grid-item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
-                            viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-check-circle"
+                            viewBox="0 0 16 16"
+                        >
                             <path
-                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+                            />
                         </svg>
                     </span>
                     <h3 class="grid-heading">Money Back Guarantee</h3>
@@ -267,11 +330,19 @@
 
                 <div class="grid-item">
                     <span class="grid-item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
-                            viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-check-circle"
+                            viewBox="0 0 16 16"
+                        >
                             <path
-                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+                            />
                         </svg>
                     </span>
                     <h3 class="grid-heading">Unmatched Support</h3>
@@ -283,11 +354,19 @@
 
                 <div class="grid-item">
                     <span class="grid-item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
-                            viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-check-circle"
+                            viewBox="0 0 16 16"
+                        >
                             <path
-                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+                            />
                         </svg>
                     </span>
                     <h3 class="grid-heading">We Know SEO</h3>
@@ -298,171 +377,175 @@
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="performance">
-        <span class="heading-toptitle"> Performance </span>
-        <h1>We Build Better Websites That Perform.</h1>
-        <p>
-            When it comes to website load times, not very many can get the
-            Google PageSpeed scores that we get with each and every site.
-            Test your website load times with Google PageSpeed Insights and
-            see what your current site is scoring right now.
-        </p>
-
-        <div class="performance-grid">
-            <div class="grid-item">
-                <span class="grid-item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-graph-up-arrow"
-                        viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07" />
-                    </svg>
-                </span>
-                <p class="grid-content">
-                    Better load times means more traffic and more site
-                    conversions over time.
-                </p>
             </div>
+        </section>
 
-            <div class="grid-item">
-                <span class="grid-item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-google"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08h7.545z" />
-                    </svg>
-                </span>
-                <p class="grid-content">
-                    Faster websites can help improve SEO and your Google ads
-                    performance.
-                </p>
-            </div>
+        <section id="performance">
+            <span class="heading-toptitle"> Performance </span>
+            <h1>We Build Better Websites That Perform.</h1>
+            <p>
+                When it comes to website load times, not very many can get the
+                Google PageSpeed scores that we get with each and every site.
+                Test your website load times with Google PageSpeed Insights and
+                see what your current site is scoring right now.
+            </p>
 
-            <div class="grid-item">
-                <span class="grid-item-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-lightning-charge"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z" />
-                    </svg>
-                </span>
-                <p class="grid-content">
-                    Our sites load instantly in under 1 second or less,
-                    which leads to a better user experience and conversions.
-                </p>
-            </div>
-        </div>
-    </section>
+            <div class="performance-grid">
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
 
-    <section id="cta">
-        <h1 id="cta__title">
-            Ready to elevate your online presence? Schedule a
-            consultation to explore our tailored approach.
-        </h1>
-        <button id="cta__button">Free online consultation</button>
-    </section>
-
-
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__section">
-                <h3 class="footer__section-title">Kolibri</h3>
-                <p class="footer__section-text">
-                    We craft beautiful, functional websites that help businesses in and beyond
-                    soar to new heights.
-                </p>
-                <div class="footer__social">
-                    <a href="#" class="footer__social-link" aria-label="Telegram">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            fill="currentColor"
+                            class="bi bi-graph-up-arrow"
+                            viewBox="0 0 16 16"
+                        >
                             <path
-                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                fill-rule="evenodd"
+                                d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"
+                            />
                         </svg>
-                    </a>
-                    <a href="#" class="footer__social-link" aria-label="VKontakte">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 8H16V6H14V8Z" fill="currentColor" />
+                    </span>
+                    <p class="grid-content">
+                        Better load times means more traffic and more site
+                        conversions over time.
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-google"
+                            viewBox="0 0 16 16"
+                        >
                             <path
-                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M7 9H9V15H7V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M15 9H17V15H15V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M11 12H13V15H11V12Z" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08h7.545z"
+                            />
                         </svg>
-                    </a>
-                    <a href="#" class="footer__social-link" aria-label="WhatsApp">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </span>
+                    <p class="grid-content">
+                        Faster websites can help improve SEO and your Google ads
+                        performance.
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+
+                            fill="currentColor"
+                            class="bi bi-lightning-charge"
+                            viewBox="0 0 16 16"
+                        >
                             <path
-                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M8 12L10 10L12 12L14 10L16 12" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z"
+                            />
                         </svg>
-                    </a>
+                    </span>
+                    <p class="grid-content">
+                        Our sites load instantly in under 1 second or less,
+                        which leads to a better user experience and conversions.
+                    </p>
                 </div>
             </div>
+        </section>
 
+        <section id="cta">
+            <h1 id="cta__title">
+                Ready to elevate your online presence? Schedule a
+                consultation to explore our tailored approach.
+            </h1>
+            <button id="cta__button">Free online consultation</button>
+        </section>
+
+
+        <footer class="footer">
+          <div class="footer__content">
             <div class="footer__section">
-                <h3 class="footer__section-title">Services</h3>
-                <ul class="footer__section-links">
-                    <li class="footer__section-link"><a href="#">Web Development & Design</a></li>
-
-
-                    <li class="footer__section-link"><a href="#">SEO Optimization</a></li>
-                    <li class="footer__section-link"><a href="#">Branding</a></li>
-                </ul>
+              <h3 class="footer__section-title">Kolibri</h3>
+              <p class="footer__section-text">
+                We craft beautiful, functional websites that help businesses in and beyond
+                soar to new heights.
+              </p>
+              <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="Telegram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="VKontakte">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 8H16V6H14V8Z" fill="currentColor"/>
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 9H9V15H7V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 9H17V15H15V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11 12H13V15H11V12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 12L10 10L12 12L14 10L16 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
             </div>
 
             <div class="footer__section">
-                <h3 class="footer__section-title">Contact</h3>
-                <ul class="footer__section-links">
-                    <li class="footer__section-link">
-                        <a href="mailto:hello@kolibri.ru">hello@kolibri.ru</a>
-                    </li>
-                    <li class="footer__section-link">
-                        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
-                    </li>
-                    <li class="footer__section-link">
-                        <address> Tatarstan, Russia</address>
-                    </li>
-                </ul>
+              <h3 class="footer__section-title">Services</h3>
+              <ul class="footer__section-links">
+                <li class="footer__section-link"><a href="#">Web Development & Design</a></li>
+
+
+                <li class="footer__section-link"><a href="#">SEO Optimization</a></li>
+                <li class="footer__section-link"><a href="#">Branding</a></li>
+              </ul>
             </div>
 
             <div class="footer__section">
-                <h3 class="footer__section-title">Contact Us</h3>
-                <p class="footer__section-text">
-                    Get a free online consultation within 24 hours.
-                </p>
-                <form class="footer__newsletter">
-                    <input type="email" placeholder="Your email" required>
-                    <button type="submit" class="primary-btn" style="margin-top: 10px; width: 100%;">
-                        free request
-                    </button>
-                </form>
+              <h3 class="footer__section-title">Contact</h3>
+              <ul class="footer__section-links">
+                <li class="footer__section-link">
+                  <a href="mailto:hello@kolibri.ru">hello@kolibri.ru</a>
+                </li>
+                <li class="footer__section-link">
+                  <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                </li>
+                <li class="footer__section-link">
+                  <address> Tatarstan, Russia</address>
+                </li>
+              </ul>
             </div>
-        </div>
 
-        <div class="footer__bottom">
+            <div class="footer__section">
+              <h3 class="footer__section-title">Contact Us</h3>
+              <p class="footer__section-text">
+                  Get a free online consultation within 24 hours.
+              </p>
+              <form class="footer__newsletter">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit" class="primary-btn" style="margin-top: 10px; width: 100%;">
+                    free request
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
             <p class="footer__bottom-copyright">
-                &copy; 2025 Kolibri Web Designs. All rights reserved.
+              &copy; 2025 Kolibri Web Designs. All rights reserved.
             </p>
             <div class="footer__bottom-links">
-                <a href="#" class="footer__bottom-link">Privacy Policy</a>
-                <a href="#" class="footer__bottom-link">Terms of Service</a>
+              <a href="#" class="footer__bottom-link">Privacy Policy</a>
+              <a href="#" class="footer__bottom-link">Terms of Service</a>
             </div>
-        </div>
-    </footer>
-    <script src="../scripts/navbar.js"></script>
-</body>
-
+          </div>
+        </footer>
+        <script src="../scripts/navbar.js"></script>
+    </body>
 </html>
