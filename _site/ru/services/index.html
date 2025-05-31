@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Услуги | Колибри</title>
+    <link rel="stylesheet" href="/_site/scss/main.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="../index.html" class="navbar__logo">
+                <span class="navbar__logo-icon">
+                    <img src="../assets/Kolibri Logo White Text.png" height="50px" alt="Логотип Колибри">
+                </span>
+                Колибри
+            </a>
+
+            <ul class="navbar__menu">
+                <li><a href="../index.html" class="navbar__menu-link">Главная</a></li>
+                <li><a href="services.html" class="navbar__menu-link active">Услуги</a></li>
+                <li><a href="portfolio.html" class="navbar__menu-link">Портфолио</a></li>
+                <li><a href="about.html" class="navbar__menu-link">О нас</a></li>
+                <!-- <li><a href="/blog" class="navbar__menu-link">Блог</a></li> -->
+                <li><a href="contact.html" class="navbar__menu-link">Контакты</a></li>
+            </ul>
+
+            <div class="navbar__cta">
+                <a href="contact.html">
+                    <button class="nav-btn">Получить предложение</button>
+                </a>
+            </div>
+
+            <button class="navbar__hamburger" aria-label="Меню">
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    <main>
+        <section id="services-hero">
+            <div class="wrapper">
+                <h1 class="page-title">Веб-дизайн и разработка</h1>
+                <p>
+                    В Kolibri Web Designs мы создаем индивидуальные сайты с ручной версткой -
+                    без конструкторов и WordPress. Наш подход гарантирует легкие, безопасные
+                    и высокопроизводительные сайты, созданные специально для вашего бренда.
+                </p>
+            </div>
+        </section>
+
+        <section id="pricing-section">
+            <div class="wrapper">
+                <h1 class="pricing-title">
+                    Доступные решения для веб-дизайна
+                </h1>
+
+                <div class="pricing-highlight">
+                    <h2>
+                        Сайты от <span class="price-accent">0₽ предоплаты</span> и
+                        <span class="price-accent">1865₽ в месяц</span>
+                    </h2>
+                    <p class="one-time-option">
+                        Или единоразовый платеж <span class="price-accent">40 000₽</span>
+                    </p>
+                </div>
+
+                <div class="pricing-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Ручная верстка для скорости</h3>
+                            <p>Молниеносная загрузка без громоздких конструкторов</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Безопасная архитектура</h3>
+                            <p>Никаких уязвимостей WordPress и проблем с плагинами</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>SEO-оптимизация</h3>
+                            <p>Сайты созданы для видимости и хорошего ранжирования</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Адаптивный дизайн</h3>
+                            <p>Идеальное отображение на всех устройствах</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-options">
+                    <div class="pricing-card starter">
+                        <div class="pricing-card-header">
+                            <h3>Базовый (3 страницы)</h3>
+                            <div class="pricing-badge">Экономный</div>
+                            <div class="pricing-amount">
+                                <span class="price">10 000₽</span>
+                                <span class="period">единоразово</span>
+                            </div>
+                            <p class="pricing-detail">Идеально для стартапов</p>
+                        </div>
+                        <div class="pricing-card-body">
+                            <ul class="pricing-features">
+                                <li>3 страницы с ручной версткой</li>
+                                <li>Адаптивный дизайн</li>
+                                <li>Базовая SEO-настройка</li>
+                                <li>Высокая скорость загрузки</li>
+                                <li>Контактная форма</li>
+                                <li>Помощь с настройкой домена</li>
+                            </ul>
+                            <a href="./contact.html">
+                                <button class="pricing-cta-btn">
+                                    Начать
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="pricing-card-header">
+                            <h3>Месячный план</h3>
+                            <div class="pricing-badge">Популярный</div>
+                            <div class="pricing-amount">
+                                <span class="price">1865₽</span>
+                                <span class="period">/месяц</span>
+                            </div>
+                            <p class="pricing-detail">Без предоплаты</p>
+                        </div>
+                        <div class="pricing-card-body">
+                            <ul class="pricing-features">
+                                <li>Сайт с ручной версткой</li>
+                                <li>До 5 страниц</li>
+                                <li>Адаптивный дизайн</li>
+                                <li>SEO-оптимизация</li>
+                                <li>Высокая скорость загрузки</li>
+                                <li>Безопасная архитектура</li>
+                                <li>Бесплатный домен на 1 год</li>
+                            </ul>
+                            <a href="./contact.html">
+                                <button class="pricing-cta-btn">
+                                    Начать
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-card-header">
+                            <h3>Полный пакет</h3>
+                            <div class="pricing-amount">
+                                <span class="price">40 000₽</span>
+                                <span class="period">единоразово</span>
+                            </div>
+                            <p class="pricing-detail">Без ежемесячных платежей</p>
+                        </div>
+                        <div class="pricing-card-body">
+                            <ul class="pricing-features">
+                                <li>Полноценное решение</li>
+                                <li>До 10 страниц</li>
+                                <li>Приоритетная поддержка</li>
+                                <li>Дополнительные правки</li>
+                                <li>Перенос контента</li>
+                                <li>Настройка аналитики</li>
+                                <li>6 месяцев бесплатного обслуживания</li>
+                            </ul>
+                            <a href="./contact.html">
+                                <button class="pricing-cta-btn">
+                                    Начать
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="web-design-and-dev">
+            <div class="wrapper">
+                <h1>Почему важна ручная верстка</h1>
+                <ul>
+                    <li class="why-it-mattters-list-item">
+                        <h2>Скорость и производительность:</h2>
+                        <p>
+                            Мгновенная загрузка, идеальные показатели Google PageSpeed
+                            и высокая вовлеченность пользователей. Сайты, которые грузятся
+                            дольше 3 секунд, теряют до 50% посетителей - мы исключаем этот риск.
+                        </p>
+                    </li>
+
+                    <li class="why-it-mattters-list-item">
+                        <h2>Безопасность:</h2>
+                        <p>
+                            Статическая HTML/CSS архитектура устраняет уязвимости WordPress
+                            (плагины, базы данных, обновления). Наши сайты остаются
+                            безопасными без постоянного обслуживания.
+                        </p>
+                    </li>
+
+                    <li class="why-it-mattters-list-item">
+                        <h2>SEO и видимость:</h2>
+                        <p>
+                            Высокая скорость и соответствие Core Vitals улучшают позиции
+                            в поиске. В сочетании с оптимизированным контентом это привлекает
+                            органический трафик и укрепляет авторитет домена.
+                        </p>
+                    </li>
+
+                    <li class="why-it-mattters-list-item">
+                        <h2>Эффективность рекламы:</h2>
+                        <p>
+                            Быстрые сайты снижают показатель отказов и стоимость клика,
+                            максимизируя ROI рекламного бюджета.
+                        </p>
+                    </li>
+
+                    <li class="why-it-mattters-list-item">
+                        <h2>Google Мой бизнес:</h2>
+                        <p>
+                            Высокая скорость сайта в сочетании с заполненным профилем
+                            (отзывы, фото) повышает видимость в локальных поисках.
+                        </p>
+                    </li>
+                </ul>
+                <div class="services-conclusion">
+                    <p>
+                        Мы делаем акцент на практических результатах, а не на общих "лучших практиках".
+                        Давайте создадим ваше преимущество в конкурентной цифровой среде -
+                        сайты с ручной версткой превосходят шаблонные решения.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta">
+            <h1 id="cta__title">
+                Готовы вывести свое онлайн-присутствие на новый уровень?
+                Запишитесь на консультацию для обсуждения индивидуального подхода.
+            </h1>
+            <button id="cta__button">Бесплатная онлайн-консультация</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__section-title">Колибри</h3>
+                <p class="footer__section-text">
+                    Мы создаем красивые, функциональные веб-сайты, которые помогают
+                    бизнесу расти и развиваться.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="VKontakte">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 8H16V6H14V8Z" fill="currentColor" />
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M7 9H9V15H7V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15 9H17V15H15V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M11 12H13V15H11V12Z" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8 12L10 10L12 12L14 10L16 12" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__section-title">Услуги</h3>
+                <ul class="footer__section-links">
+                    <li class="footer__section-link">
+                        <a href="#">Веб-разработка и дизайн</a>
+                    </li>
+                    <li class="footer__section-link">
+                        <a href="#">SEO-оптимизация</a>
+                    </li>
+                    <li class="footer__section-link">
+                        <a href="#">Брендинг</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__section-title">Контакты</h3>
+                <ul class="footer__section-links">
+                    <li class="footer__section-link">
+                        <a href="mailto:hello@kolibri.ru">hello@kolibri.ru</a>
+                    </li>
+                    <li class="footer__section-link">
+                        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                    </li>
+                    <li class="footer__section-link">
+                        <address>Татарстан, Россия</address>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__section-title">Свяжитесь с нами</h3>
+                <p class="footer__section-text">
+                    Получите бесплатную онлайн-консультацию в течение 24 часов.
+                </p>
+                <form class="footer__newsletter">
+                    <input type="email" placeholder="Ваш email" required />
+                    <button type="submit" class="primary-btn" style="margin-top: 10px; width: 100%">
+                        Отправить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__bottom-copyright">
+                &copy; 2025 Колибри Веб Дизайн. Все права защищены.
+            </p>
+            <div class="footer__bottom-links">
+                <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+                <a href="#" class="footer__bottom-link">Условия использования</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../../scripts/navbar.js"></script>
+</body>
+
+</html>
