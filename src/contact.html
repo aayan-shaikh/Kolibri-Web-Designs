@@ -104,10 +104,11 @@
                         </div>
                     </div>
 
-                    <form name="contact" netlify method="POST" class="contact-form" action="index.html">
+                    <form name="contact" netlify method="POST" class="contact-form" action="index.html"
+                        id="contactForm">
                         <input type="hidden" name="form-name" value="contact" />
 
-                        id="contactForm">
+
                         <h2>Send Us a Message</h2>
 
                         <div class="form-group">
@@ -262,9 +263,10 @@
             <div class="footer__section">
                 <h3 class="footer__section-title">Contact Us</h3>
                 <p class="footer__section-text">
-                    Get a <a href="./contact.html" Free online consultation</a> within 24 hours.
+                    Get a <a href="./contact.html">Free online consultation</a> within 24 hours.
                 </p>
-                <form netlify method="POST" class="footer__newsletter">
+                <form netlify method="POST" name="footer-cta" class="footer__newsletter">
+                    <input type="hidden" name="form-name" value="footer-cta" />
                     <input type="email" placeholder="Your email" required />
                     <button type="submit" class="primary-btn" style="margin-top: 10px; width: 100%">
                         free request
