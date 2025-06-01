@@ -1,176 +1,153 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact Us | Kolibri Web Designs</title>
-        <link rel="stylesheet" href="scss/layouts/_contact.scss" />
-        <link rel="stylesheet" href="scss/main.scss" />
-    </head>
-    <body>
-        <!-- NEW NAV -->
 
-        <nav class="navbar">
-            <div class="navbar__container">
-                <a href="/" class="navbar__logo">
-                    <span class="navbar__logo-icon"
-                        ><img
-                            src="../assets/Kolibri Logo White Text.png"
-                            height="50px"
-                            alt=""
-                    /></span>
-                    Kolibri
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Kolibri Web Designs</title>
+    <link rel="stylesheet" href="scss/layouts/_contact.scss" />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NEW NAV -->
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" class="navbar__logo">
+                <span class="navbar__logo-icon"><img src="../assets/Kolibri Logo White Text.png" height="50px"
+                        alt="" /></span>
+                Kolibri
+            </a>
+
+            <ul class="navbar__menu">
+                <li>
+                    <a href="/" class="navbar__menu-link">Home</a>
+                </li>
+                <li>
+                    <a href="./services.html" class="navbar__menu-link">Services</a>
+                </li>
+                <li>
+                    <a href="./portfolio.html" class="navbar__menu-link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="about.html" class="navbar__menu-link">About</a>
+                </li>
+                <!-- <li><a href="/blog" class="navbar__menu-link">Blog</a></li> -->
+                <li>
+                    <a href="./contact.html" class="navbar__menu-link active">Contact</a>
+                </li>
+            </ul>
+
+            <div class="navbar__cta">
+                <a href="./contact.html">
+                    <button class="nav-btn">Get a Quote</button>
                 </a>
-
-                <ul class="navbar__menu">
-                    <li>
-                        <a href="/" class="navbar__menu-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="./services.html" class="navbar__menu-link"
-                            >Services</a
-                        >
-                    </li>
-                    <li>
-                        <a href="./portfolio.html" class="navbar__menu-link"
-                            >Portfolio</a
-                        >
-                    </li>
-                    <li>
-                        <a href="about.html" class="navbar__menu-link">About</a>
-                    </li>
-                    <!-- <li><a href="/blog" class="navbar__menu-link">Blog</a></li> -->
-                    <li>
-                        <a
-                            href="./contact.html"
-                            class="navbar__menu-link active"
-                            >Contact</a
-                        >
-                    </li>
-                </ul>
-
-                <div class="navbar__cta">
-                    <a href="./contact.html">
-                        <button class="nav-btn">Get a Quote</button>
-                    </a>
-                </div>
-
-                <button class="navbar__hamburger" aria-label="Menu">
-                    <span class="navbar__hamburger-line"></span>
-                    <span class="navbar__hamburger-line"></span>
-                    <span class="navbar__hamburger-line"></span>
-                </button>
             </div>
-        </nav>
-        <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
-        <main>
-            <section id="contact-hero">
-                <div class="wrapper">
-                    <h1 class="page-title">Get In Touch</h1>
-                    <p>
-                        Ready to elevate your digital presence with a
-                        custom-coded website? Reach out to discuss your project
-                        needs and discover how our tailored approach can help
-                        your business stand out online.
-                    </p>
-                </div>
-            </section>
+            <button class="navbar__hamburger" aria-label="Menu">
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
-            <section id="contact-form-section">
-                <div class="wrapper">
-                    <div class="contact-container">
-                        <div class="contact-info">
-                            <h2>How to Reach Us</h2>
-                            <div class="info-item">
-                                <span class="icon">📧</span>
-                                <p>hello@kolibriwebdesigns.com</p>
-                            </div>
-                            <div class="info-item">
-                                <span class="icon">📱</span>
-                                <p>+7 (555) 123-4567</p>
-                            </div>
-                            <div class="info-item">
-                                <span class="icon">📍</span>
-                                <p>Tatarstan, Russia 🇷🇺</p>
-                            </div>
+    <main>
+        <section id="contact-hero">
+            <div class="wrapper">
+                <h1 class="page-title">Get In Touch</h1>
+                <p>
+                    Ready to elevate your digital presence with a
+                    custom-coded website? Reach out to discuss your project
+                    needs and discover how our tailored approach can help
+                    your business stand out online.
+                </p>
+            </div>
+        </section>
 
-                            <div class="consultation-note">
-                                <h3>Our Consultation Process</h3>
-                                <p>
-                                    We begin with understanding your business
-                                    goals and website needs. After our initial
-                                    discussion, we'll provide a custom proposal
-                                    tailored to your specific requirements.
-                                </p>
-                            </div>
+        <section id="contact-form-section">
+            <div class="wrapper">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>How to Reach Us</h2>
+                        <div class="info-item">
+                            <span class="icon">📧</span>
+                            <p>hello@kolibriwebdesigns.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📱</span>
+                            <p>+7 (555) 123-4567</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <p>Worldwide</p>
                         </div>
 
-                        <form class="contact-form" id="contactForm">
-                            <h2>Send Us a Message</h2>
+                        <div class="consultation-note">
+                            <h3>Our Consultation Process</h3>
+                            <p>
+                                We begin with understanding your business
+                                goals and website needs. After our initial
+                                discussion, we'll provide a custom proposal
+                                tailored to your specific requirements.
+                            </p>
+                        </div>
+                    </div>
 
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    required
-                                />
-                            </div>
+                    <form class="contact-form" id="contactForm">
+                        <h2>Send Us a Message</h2>
 
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required
-                                />
-                            </div>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
 
-                            <div class="form-group">
-                                <label for="phone"
-                                    >Phone Number (Optional)</label
-                                >
-                                <input type="tel" id="phone" name="phone" />
-                            </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
 
-                            <div class="form-group">
-                                <label for="service"
-                                    >Service Interested In</label
-                                >
-                                <select id="service" name="service">
-                                    <option value="">Please select...</option>
-                                    <option value="custom-website">
-                                        Custom Website Development
-                                    </option>
-                                    <option value="redesign">
-                                        Website Redesign
-                                    </option>
-                                    <!-- <option value="ecommerce">
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Please select...</option>
+                                <option value="custom-website">
+                                    Custom Website Development
+                                </option>
+                                <option value="redesign">
+                                    Website Redesign
+                                </option>
+                                <!-- <option value="ecommerce">
                                         E-Commerce Solution
                                     </option> -->
-                                    <option value="consultation">
-                                        Consultation Only
-                                    </option>
-                                    <option value="other">
-                                        Other (Please specify)
-                                    </option>
-                                </select>
-                            </div>
+                                <option value="consultation">
+                                    Consultation Only
+                                </option>
+                                <option value="other">
+                                    Other (Please specify)
+                                </option>
+                            </select>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="5"
-                                    required
-                                ></textarea>
-                            </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
 
-                            <!-- <div class="form-group checkbox-group">
+                        <!-- <div class="form-group checkbox-group">
                                 <input
                                     type="checkbox"
                                     id="newsletter"
@@ -182,215 +159,139 @@
                                 >
                             </div> -->
 
-                            <button
-                                type="submit"
-                                id="submit-btn"
-                                class="cta__button"
-                            >
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            <section id="cta">
-                <h1 id="cta__title">
-                    Have questions before reaching out? Schedule a no-obligation
-                    discovery call.
-                </h1>
-                <button id="cta__button">Free online consultation</button>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__content">
-                <div class="footer__section">
-                    <h3 class="footer__section-title">Kolibri</h3>
-                    <p class="footer__section-text">
-                        We craft beautiful, functional websites that help
-                        businesses in and beyond soar to new heights.
-                    </p>
-                    <div class="footer__social">
-                        <a
-                            href="#"
-                            class="footer__social-link"
-                            aria-label="Telegram"
-                        >
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                                <path
-                                    d="M8.5 12.5L10.5 14.5L15.5 9.5"
-                                    stroke="currentColor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </a>
-                        <a
-                            href="#"
-                            class="footer__social-link"
-                            aria-label="VKontakte"
-                        >
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M14 8H16V6H14V8Z"
-                                    fill="currentColor"
-                                />
-                                <path
-                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                                <path
-                                    d="M7 9H9V15H7V9Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                                <path
-                                    d="M15 9H17V15H15V9Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                                <path
-                                    d="M11 12H13V15H11V12Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </a>
-                        <a
-                            href="#"
-                            class="footer__social-link"
-                            aria-label="WhatsApp"
-                        >
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                    stroke="currentColor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                                <path
-                                    d="M8 12L10 10L12 12L14 10L16 12"
-                                    stroke="currentColor"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer__section">
-                    <h3 class="footer__section-title">Services</h3>
-                    <ul class="footer__section-links">
-                        <li class="footer__section-link">
-                            <a href="#">Web Development & Design</a>
-                        </li>
-
-                        <li class="footer__section-link">
-                            <a href="#">SEO Optimization</a>
-                        </li>
-                        <li class="footer__section-link">
-                            <a href="#">Branding</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h3 class="footer__section-title">Contact</h3>
-                    <ul class="footer__section-links">
-                        <li class="footer__section-link">
-                            <a href="mailto:hello@kolibri.ru"
-                                >hello@kolibri.ru</a
-                            >
-                        </li>
-                        <li class="footer__section-link">
-                            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
-                        </li>
-                        <li class="footer__section-link">
-                            <address>Tatarstan, Russia</address>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h3 class="footer__section-title">Contact Us</h3>
-                    <p class="footer__section-text">
-                        Get a free online consultation within 24 hours.
-                    </p>
-                    <form class="footer__newsletter">
-                        <input type="email" placeholder="Your email" required />
-                        <button
-                            type="submit"
-                            class="primary-btn"
-                            style="margin-top: 10px; width: 100%"
-                        >
-                            free request
+                        <button type="submit" id="submit-btn" class="cta__button">
+                            Send Message
                         </button>
                     </form>
                 </div>
             </div>
+        </section>
 
-            <div class="footer__bottom">
-                <p class="footer__bottom-copyright">
-                    &copy; 2025 Kolibri Web Designs. All rights reserved.
+        <section id="cta">
+            <h1 id="cta__title">
+                Have questions before reaching out? Schedule a no-obligation
+                discovery call.
+            </h1>
+            <button id="cta__button"><a href="./contact.html">Free online consultation</a></button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__section-title">Kolibri</h3>
+                <p class="footer__section-text">
+                    We craft beautiful, functional websites that help
+                    businesses in and beyond soar to new heights.
                 </p>
-                <div class="footer__bottom-links">
-                    <a href="#" class="footer__bottom-link">Privacy Policy</a>
-                    <a href="#" class="footer__bottom-link">Terms of Service</a>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="VKontakte">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 8H16V6H14V8Z" fill="currentColor" />
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M7 9H9V15H7V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15 9H17V15H15V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M11 12H13V15H11V12Z" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8 12L10 10L12 12L14 10L16 12" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </footer>
-        <script src="../scripts/navbar.js"></script>
 
-        <script>
-            // Form validation script would go here
-            document
-                .getElementById("contactForm")
-                .addEventListener("submit", function (event) {
-                    event.preventDefault();
-                    // Form submission handling would go here
-                    alert(
-                        "Thank you for your message! We will get back to you soon.",
-                    );
-                });
-        </script>
-    </body>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Services</h3>
+                <ul class="footer__section-links">
+                    <li class="footer__section-link">
+                        <a href="#">Web Development & Design</a>
+                    </li>
+
+                    <li class="footer__section-link">
+                        <a href="#">SEO Optimization</a>
+                    </li>
+                    <li class="footer__section-link">
+                        <a href="#">Branding</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__section-title">Contact</h3>
+                <ul class="footer__section-links">
+                    <li class="footer__section-link">
+                        <a href="mailto:hello@kolibri.ru">hello@kolibri.ru</a>
+                    </li>
+                    <li class="footer__section-link">
+                        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                    </li>
+                    <li class="footer__section-link">
+                        <address>Globally Based</address>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__section-title">Contact Us</h3>
+                <p class="footer__section-text">
+                    Get a <a href="./contact.html" Free online consultation</a> within 24 hours.
+                </p>
+                <form class="footer__newsletter">
+                    <input type="email" placeholder="Your email" required />
+                    <button type="submit" class="primary-btn" style="margin-top: 10px; width: 100%">
+                        free request
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__bottom-copyright">
+                &copy; 2025 Kolibri Web Designs. All rights reserved.
+            </p>
+            <div class="footer__bottom-links">
+                <a href="#" class="footer__bottom-link">Privacy Policy</a>
+                <a href="#" class="footer__bottom-link">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/navbar.js"></script>
+
+    <script>
+        // Form validation script would go here
+        document
+            .getElementById("contactForm")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+                // Form submission handling would go here
+                alert(
+                    "Thank you for your message! We will get back to you soon.",
+                );
+            });
+    </script>
+</body>
+
 </html>

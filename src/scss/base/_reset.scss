@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* 2. Remove default margin */
 * {
     margin: 0;
@@ -57,6 +58,7 @@ h6 {
 p {
     text-wrap: pretty;
 }
+
 h1,
 h2,
 h3,
@@ -73,3 +75,4 @@ h6 {
 #__next {
     isolation: isolate;
 }
+
