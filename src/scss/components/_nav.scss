@@ -173,8 +173,9 @@ nav a.accent-link {
         &-icon {
             color: $primary;
             transition: transform 0.3s ease;
+
             @include responsive(mobile) {
-                opacity: 0;
+                display: none;
             }
         }
 
