@@ -115,7 +115,7 @@ Hi, I’m **Aayan Shaikh**, the brain behind Kolibri’s buzzing designs! I’m 
 
 - 📧 **Email**: [aayan@aayanshaikh.com](mailto:aayan@aayanshaikh.com)
 - 📞 **Phone**: [+91 9767596361](tel:+919767596361)
-- 🌐 **GitHub**: [aayanshaikh](https://github.com/aayanshaikh)
+- 🌐 **GitHub**: [aayan-shaikh](https://github.com/aayan-shaikh/)
 
 Got a project? Let’s make it *hum* together!
 
