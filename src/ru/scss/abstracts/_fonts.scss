@@ -1,0 +1,23 @@
+// abstracts/_fonts.scss
+// FontShare imports
+// @import url("https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&f[]=bevellier@100,101,200,201,300,301,400,401,500,501,600,601,700,701,900,901,1,2&display=swap");
+
+// Font variables
+$heading-font: "Satoshi", sans-serif;
+$body-font: "Bevellier", sans-serif;
+
+// Font weight variables
+$thin-weight: 100;
+$extra-light-weight: 200;
+$light-weight: 300;
+$regular-weight: 400;
+$medium-weight: 500;
+$semi-bold-weight: 600;
+$bold-weight: 700;
+$extra-bold-weight: 800;
+$black-weight: 900;
+
+body {
+    font-family: $body-font;
+    font-weight: $regular-weight;
+}

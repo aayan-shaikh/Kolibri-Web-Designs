@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- NORMAL SEO TAGS -->
+    <!--  Essential META Tags -->
+    <meta name="title" content="Kolibri Web Designs | Веб-дизайн для малого бизнеса в России и Восточной Европе">
+    <meta name="robots" content="follow" />
+    <!--  Non-Essential, But Recommended -->
+    <meta name="description"
+        content="100% ручная разработка веб-сайтов в России и Восточной Европе с превосходными результатами. А также услуги SEO.">
+    <!-- NORMAL SEO TAGS END -->
+
+    <!-- SOCIAL MEDIA TAGS -->
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Kolibri Web Designs | Веб-дизайн для малого бизнеса в России и Восточной Европе">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../../assets/wa-kolibri-logo.avif">
+    <meta property="og:url" content="https:kolibriwebdesigns.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description"
+        content="100% ручная разработка веб-сайтов в России и Восточной Европе с превосходными результатами. А также услуги SEO.">
+    <meta property="og:site_name" content="Kolibri Web Designs">
+    <meta name="twitter:image:alt" content="Kolibri Web Designs">
+    <!-- SOCIAL MEDIA TAGS END -->
+
+    <title>Kolibri Web Designs | Веб-дизайн для малого бизнеса</title>
+
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#34856f">
+
+    <!-- FONTS -->
+    <link rel="preload" as="style"
+        href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&f[]=bevellier@100,101,200,201,300,301,400,401,500,501,600,601,700,701,900,901,1,2&display=swap">
+    <link rel="stylesheet"
+        href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&f[]=bevellier@100,101,200,201,300,301,400,401,500,501,600,601,700,701,900,901,1,2&display=swap">
+
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NEW NAV -->
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" class="navbar__logo">
+                <span class="navbar__logo-icon"><img src="../../assets/Kolibri Logo ENG Text.avif" width="50"
+                        height="50" alt="Логотип Kolibri Web Designs"></span>
+                Kolibri
+            </a>
+
+            <ul class="navbar__menu">
+                <li><a href="/" class="navbar__menu-link active">Главная</a></li>
+                <li><a href="./services.html" class="navbar__menu-link">Услуги</a></li>
+                <li><a href="./portfolio.html" class="navbar__menu-link">Портфолио</a></li>
+                <li><a href="about.html" class="navbar__menu-link">О нас</a></li>
+                <!-- <li><a href="/blog" class="navbar__menu-link">Блог</a></li> -->
+                <li><a href="./contact.html" class="navbar__menu-link">Контакты</a></li>
+            </ul>
+
+            <div class="navbar__cta">
+                <a href="./contact.html">
+                    <button class="nav-btn">Получить предложение</button>
+                </a>
+            </div>
+
+            <button class="navbar__hamburger" aria-label="Меню">
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+                <span class="navbar__hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    <section id="hero">
+
+        <div id="hero-text">
+            <span class="heading-toptitle">
+                Индивидуальный дизайн, ручная разработка
+            </span>
+            <h1>Веб-дизайн для малого бизнеса в России Kolibri</h1>
+            <p>
+                Без конструкторов страниц и WordPress. Мы предлагаем 100% ручную разработку
+                веб-сайтов с превосходными результатами от ₽2,500/месяц, а также услуги Google Ads и SEO.
+            </p>
+            <button class="primary-btn"><a href="./contact.html">Начать</a></button>
+            <button class="secondary-btn"><a href="./about.html">О нас</a></button>
+        </div>
+        <img id="hero-img" src="../../assets/hero-bird.avif" alt="колибри"></img>
+    </section>
+
+    <section id="what-we-do">
+        <span class="heading-toptitle"> Что мы делаем </span>
+        <h1>Больше не беспокойтесь о своем веб-сайте</h1>
+        <p class="text">
+            В Kolibri Web Designs мы специализируемся на веб-дизайне и разработке для малого бизнеса
+            в России и Восточной Европе. Каждая строка кода пишется вручную, чтобы обеспечить
+            лучшую производительность и удовлетворить требования Google, что помогает привлекать
+            больше клиентов на ваш сайт и увеличивать доход вашего бизнеса. Мы также управляем
+            правками за вас и никогда не оставим вас в беде. Наша цель — создавать долгосрочные
+            отношения с нашими клиентами и наблюдать за их ростом со временем.
+        </p>
+        <div class="features-grid">
+            <div class="grid-item">
+                <span class="grid-item-icon">
+                    <svg class="grid-item-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-tablet" viewBox="0 0 16 16">
+                        <path
+                            d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                    </svg>
+                </span>
+                <h3 class="grid-heading">Мобильный дизайн</h3>
+                <p class="grid-content">
+                    Мы начинаем разработку вашего сайта с мобильных устройств,
+                    обеспечивая легкий и оптимизированный код без лишнего мусора,
+                    что делает сайт еще более адаптивным.
+                </p>
+                <button class="grid-cta"><a href="./contact.html">Начать</a></button>
+            </div>
+
+            <div class="grid-item">
+                <span class="grid-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                        <path
+                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                    </svg>
+                </span>
+                <h3 class="grid-heading">Полностью адаптивный</h3>
+                <p class="grid-content">
+                    Ваш веб-сайт будет адаптирован для всех размеров экранов мобильных устройств,
+                    планшетов и настольных компьютеров, чтобы посетители могли видеть красивый сайт
+                    независимо от размера экрана.
+                </p>
+                <button class="grid-cta"><a href="./contact.html">Начать</a></button>
+            </div>
+
+            <div class="grid-item">
+                <span class="grid-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-speedometer2"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z" />
+                        <path fill-rule="evenodd"
+                            d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.98 7.98 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3" />
+                    </svg>
+                </span>
+                <h3 class="grid-heading">Оптимизированная скорость загрузки</h3>
+                <p class="grid-content">
+                    Если ваш сайт загружается дольше 3 секунд, вы можете потерять до 50% трафика.
+                    Наши сайты загружаются за 1 секунду или меньше, гарантируя, что каждый посетитель
+                    достигнет вашего сайта.
+                </p>
+                <button class="grid-cta"><a href="./contact.html">Узнать больше о скорости загрузки</a></button>
+            </div>
+
+            <div class="grid-item">
+                <span class="grid-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </span>
+                <h3 class="grid-heading">Услуги SEO</h3>
+                <p class="grid-content">
+                    У нас есть штатный специалист по SEO, который разбирается в локальном SEO
+                    и знает, как добиться высоких позиций на вашем местном рынке, с множеством
+                    кейсов и ежемесячными отчетами.
+                </p>
+                <button class="grid-cta"><a href="./contact.html">Узнать больше о SEO</a></button>
+            </div>
+
+            <div class="grid-item">
+                <span class="grid-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                </span>
+                <h3 class="grid-heading">Удаленная работа</h3>
+                <p class="grid-content">
+                    Мы не нанимаем дешевых зарубежных разработчиков. Мы работаем
+                    100% удаленно из разных уголков мира.
+                </p>
+                <button class="grid-cta"><a href="./about.html">Узнать больше о нас</a></button>
+            </div>
+
+            <div class="grid-item">
+                <span class="grid-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-hand-index"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046zm2.094 2.025" />
+                    </svg>
+                </span>
+                <h3 class="grid-heading">Ручная разработка сайтов</h3>
+                <p class="grid-content">
+                    Мы не нанимаем дешевых зарубежных разработчиков. Мы работаем
+                    100% удаленно из разных уголков мира.
+                </p>
+                <button class="grid-cta"><a href="./about.html">Узнать больше о нас</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="what-we-offer">
+
+        <span class="heading-toptitle"> Что мы предлагаем </span>
+        <h1>Веб-сайты от ₽0 аванса и ₽2,500/месяц</h1>
+        <p class="offer-text">
+            Мы предлагаем ₽0 аванса за стандартный веб-сайт для малого бизнеса на 5 страниц.
+            Если вам нужно больше, мы рассчитываем индивидуальную стоимость в зависимости от
+            объема работ, количества дополнительных страниц и затраченного времени. Минимальный
+            контракт на 12 месяцев. Включает дизайн, разработку, хостинг, неограниченные правки,
+            поддержку 24/7 и пожизненные обновления.
+        </p>
+        <div class="list-container">
+            <!-- <img src="../assets/hero-bird.avif" alt=""> -->
+            <div class="offering-grid">
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">100% безопасность</h3>
+                    <p class="grid-content">
+                        Наши сайты — это статический HTML и CSS код, что означает,
+                        что их буквально невозможно взломать.
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">Индивидуальный дизайн</h3>
+                    <p class="grid-content">
+                        Наши дизайны создаются собственной командой дизайнеров,
+                        что позволяет нам воплощать любые идеи.
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">100 баллов PageSpeed</h3>
+                    <p class="grid-content">
+                        Наши сайты не содержат лишнего кода, созданы с учетом
+                        цели, поэтому мы получаем идеальные оценки скорости 98-100/100
+                        от Google.
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">Гарантия возврата денег</h3>
+                    <p class="grid-content">
+                        Если мы не сможем создать дизайн, который вам понравится,
+                        вы получите деньги обратно, и контракт будет расторгнут.
+                        Мы стоим за свою работу.
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">Непревзойденная поддержка</h3>
+                    <p class="grid-content">
+                        Звоните или пишите нам в любое время, без автоответчиков
+                        или роботов. Вы общаетесь напрямую с владельцем и разработчиком.
+                    </p>
+                </div>
+
+                <div class="grid-item">
+                    <span class="grid-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                        </svg>
+                    </span>
+                    <h3 class="grid-heading">Мы знаем SEO</h3>
+                    <p class="grid-content">
+                        Никаких пустых обещаний, трюков или лжи. Мы четко объясняем,
+                        что такое SEO, как оно работает и что мы можем сделать, чтобы
+                        вы заняли высокие позиции.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="performance">
+        <span class="heading-toptitle"> Производительность </span>
+        <h1>Мы создаем сайты, которые работают лучше.</h1>
+        <p>
+            Когда речь идет о времени загрузки веб-сайта, немногие могут добиться
+            таких оценок Google PageSpeed, как мы с каждым сайтом. Протестируйте
+            время загрузки вашего сайта с помощью Google PageSpeed Insights и узнайте,
+            какой результат у вашего текущего сайта.
+        </p>
+
+        <div class="performance-grid">
+            <div class="grid-item">
+                <span class="grid-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-graph-up-arrow"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07" />
+                    </svg>
+                </span>
+                <p class="grid-content">
+                    Лучшее время загрузки означает больше трафика и больше конверсий
+                    на сайте со временем.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <span class="grid-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-google"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                    </svg>
+                </span>
+                <p class="grid-content">
+                    Более быстрые веб-сайты улучшают SEO и производительность
+                    вашей рекламы в Google.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                <span class="grid-item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-lightning-charge"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z" />
+                    </svg>
+                </span>
+                <p class="grid-content">
+                    Наши сайты загружаются мгновенно за 1 секунду или меньше,
+                    что обеспечивает лучший пользовательский опыт и конверсии.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <h1 id="cta__title">
+            Готовы улучшить свое присутствие в интернете? Запишитесь на
+            консультацию, чтобы узнать о нашем индивидуальном подходе.
+        </h1>
+        <button id="cta__button"><a href="./contact.html">Бесплатная онлайн-консультация</a></button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__section-title">Kolibri</h3>
+                <p class="footer__section-text">
+                    Мы создаем красивые и функциональные веб-сайты, которые помогают
+                    бизнесам в России и за ее пределами достигать новых высот.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="VKontakte">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 8H16V6H14V8Z" fill="currentColor" />
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M7 9H9V15H7V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15 9H17V15H15V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M11 12H13V15H11V12Z" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="WhatsApp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8 12L10 14L12 12L14 10L16 12" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__section-title">Услуги</h3>
+                <ul class="footer__section-links">
+                    <li class="footer__section-link"><a href="/services">Веб-разработка и дизайн</a></li>
+                    <li class="footer__section-link"><a href="/services">SEO-оптимизация</a></li>
+                    <li class="footer__section-link"><a href="/services">Брендинг</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__section-title">Контакты</h3>
+                <ul class="footer__section-links">
+                    <li class="footer__section-link">
+                        <a href="mailto:aayan@aayanshaikh.com">aayan@aayanshaikh.com</a>
+                    </li>
+                    <li class="footer__section-link">
+                        <a href="tel:+79991234567">+7 999 123-45-67</a>
+                    </li>
+                    <li class="footer__section-link">
+                        <address>Работаем по всему миру</address>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3 class="footer__section-title">Свяжитесь с нами</h3>
+                <p class="footer__section-text">
+                    Получите <a href="./contact.html">бесплатную онлайн-консультацию</a> в течение 24 часов.
+                </p>
+                <form netlify method="POST" name="footer-cta" class="footer__newsletter">
+                    <input type="hidden" name="form-name" value="footer-cta" />
+                    <input type="email" name="email" placeholder="Ваш email" required />
+
+                    <button type="submit" class="primary-btn" style="margin-top: 10px; width: 100%;">
+                        Бесплатный запрос
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__bottom-copyright">
+                © 2025 Kolibri Web Designs. Все права защищены.
+            </p>
+            <div class="footer__bottom-links">
+                <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+                <a href="#" class="footer__bottom-link">Условия обслуживания</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../../scripts/navbar.js"></script>
+</body>
+
+</html>

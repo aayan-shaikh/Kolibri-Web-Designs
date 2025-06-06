@@ -1,0 +1,191 @@
+@use "../abstracts/" as *;
+@use "../base/typography" as *;
+$hover-color: darken($primary, 10%);
+
+@use "../abstracts" as *;
+
+.navbar {
+    background-color: rgba($secondary, 0.95);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        color: $text;
+
+        font-family: $heading-font;
+        font-weight: $black-weight;
+        font-size: 1.8rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+
+        &-icon {
+            color: $primary;
+            transition: transform 0.3s ease;
+
+            @include responsive(mobile) {
+                display: none;
+            }
+        }
+
+        &:hover &-icon {
+            transform: rotate(-15deg);
+        }
+    }
+
+    &__menu {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &-link {
+            color: rgba($text, 0.9);
+            text-decoration: none;
+            font-family: $heading-font;
+            font-weight: $medium-weight;
+            font-size: 1.1rem;
+            position: relative;
+            padding: 0.5rem 0;
+            transition: all 0.3s ease;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: $primary;
+                transition: width 0.3s ease;
+            }
+
+            &:hover {
+                color: $text;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &.active {
+                color: lighten($primary, 20%);
+                font-weight: $bold-weight;
+
+                &::after {
+                    width: 100%;
+                    background: $accent;
+                }
+            }
+        }
+    }
+
+    &__cta {
+        .primary-btn {
+            padding: 0.7rem 1.5rem;
+            font-size: 1rem;
+        }
+    }
+
+    &__hamburger {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 1001;
+        margin-left: auto;
+
+        &-line {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background: $text;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            margin-left: auto;
+            transform-origin: center;
+        }
+
+        &.active &-line:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        &.active &-line:nth-child(2) {
+            opacity: 0;
+        }
+
+        &.active &-line:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+    }
+
+    // Scrolled state
+    &.scrolled {
+        background-color: rgba(darken($secondary, 5%), 0.98);
+        padding: 0.5rem 0;
+
+        .navbar__logo {
+            font-size: 1.6rem;
+        }
+    }
+
+    // Mobile styles
+    @media (max-width: 992px) {
+        &__menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 300px;
+            height: 100vh;
+            background: $secondary;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            transition: right 0.4s ease-in-out;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+
+            &.active {
+                right: 0;
+            }
+        }
+
+        &__hamburger {
+            display: block;
+        }
+
+        &__cta {
+            display: none;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__container {
+            padding: 1rem;
+        }
+
+        &__logo {
+            font-size: 1.5rem;
+        }
+    }
+}
