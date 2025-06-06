@@ -6,7 +6,7 @@
 [![Sass](https://img.shields.io/badge/Styled%20with-Sass-de8b90?style=for-the-badge&logo=sass)](https://sass-lang.com/)
 
 <p align="center">
-  <img src="assets/kolibri-logo.png" alt="Kolibri Hummingbird Logo" width="200"/>
+  <img src="assets/hero-bird.png" alt="Kolibri Hummingbird Logo" width="200"/>
 </p>
 
 Welcome to **Kolibri Web Designs**, where we *flit* through code like hummingbirds sipping nectar from the digital jungle! 🌿 This project crafts *vibrant*, *responsive* websites for small businesses, buzzing with emerald greens (#34856f) and coral pops (#e44c59). Built with love by **Aayan Shaikh**, Kolibri delivers bilingual magic in English and Russian, making your online presence soar. 🚀
