@@ -1,50 +1,13 @@
-// const openButton = document.getElementById("open-sidebar-button");
-// const navbar = document.getElementById("navbar");
-
-// const media = window.matchMedia("(width < 700px)");
-
-// media.addEventListener("change", (e) => updateNavbar(e));
-
-// function updateNavbar(e) {
-//   const isMobile = e.matches;
-//   console.log(isMobile);
-//   if (isMobile) {
-//     navbar.setAttribute("inert", "");
-//   } else {
-//     // desktop device
-//     navbar.removeAttribute("inert");
-//   }
-// }
-
-// function openSidebar() {
-//   navbar.classList.add("show");
-//   openButton.setAttribute("aria-expanded", "true");
-//   navbar.removeAttribute("inert");
-// }
-
-// function closeSidebar() {
-//   navbar.classList.remove("show");
-//   openButton.setAttribute("aria-expanded", "false");
-//   navbar.setAttribute("inert", "");
-// }
-
-// // For Bookmark Links
-// // const navLinks = document.querySelectorAll('nav a')
-// // navLinks.forEach(link => {
-// //   link.addEventListener('click', () => {
-// //     closeSidebar()
-// //   })
-// // })
-
-// updateNavbar(media);
 document.addEventListener("DOMContentLoaded", function () {
   // Mobile menu toggle
   const hamburger = document.querySelector(".navbar__hamburger");
   const menu = document.querySelector(".navbar__menu");
+  const overlay = document.querySelector("#overlay");
 
   hamburger.addEventListener("click", function () {
     this.classList.toggle("active");
     menu.classList.toggle("active");
+    overlay.classList.toggle("active");
   });
 
   // Close menu when clicking on a link
@@ -53,8 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function () {
       hamburger.classList.remove("active");
       menu.classList.remove("active");
+      overlay.classList.remove("active");
     });
   });
+
+  // Close menu when clicking outside (on overlay)
+  function closeSidebar() {
+    hamburger.classList.remove("active");
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+  }
 
   // Navbar scroll effect
   const navbar = document.querySelector(".navbar");
@@ -65,4 +36,36 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.classList.remove("scrolled");
     }
   });
+
+  // Language switcher function
+  function switchLanguage(lang) {
+    console.log(`Switching to language: ${lang}`);
+    const currentPath = window.location.pathname;
+    let newPath;
+
+    if (lang === 'ru') {
+      if (currentPath === '/' || !currentPath.startsWith('/ru/')) {
+        newPath = currentPath === '/' ? '/ru/' : `/ru${currentPath}`;
+      } else {
+        newPath = currentPath; // Already in Russian
+      }
+    } else {
+      newPath = currentPath.startsWith('/ru/') ? currentPath.replace('/ru/', '/') : currentPath;
+      if (newPath === '') newPath = '/'; // Ensure root path
+    }
+
+    console.log(`Redirecting to: ${newPath}`);
+    if (newPath !== currentPath) {
+      window.location.href = newPath;
+    } else {
+      console.log('No redirect needed; already on the correct language path.');
+    }
+  }
+
+  // Expose functions to global scope
+  window.switchLanguage = switchLanguage;
+  window.closeSidebar = closeSidebar;
+
+  // Close menu when clicking overlay
+  overlay.addEventListener("click", closeSidebar);
 });

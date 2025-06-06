@@ -2,6 +2,8 @@
 @use "../base/typography" as *;
 $hover-color: darken($primary, 10%);
 
+@use "../abstracts" as *;
+
 .navbar {
     background-color: rgba($secondary, 0.95);
     backdrop-filter: blur(8px);
@@ -24,6 +26,7 @@ $hover-color: darken($primary, 10%);
 
     &__logo {
         color: $text;
+
         font-family: $heading-font;
         font-weight: $black-weight;
         font-size: 1.8rem;
@@ -96,7 +99,7 @@ $hover-color: darken($primary, 10%);
     }
 
     &__cta {
-        .nav-btn {
+        .primary-btn {
             padding: 0.7rem 1.5rem;
             font-size: 1rem;
         }
@@ -135,6 +138,7 @@ $hover-color: darken($primary, 10%);
         }
     }
 
+    // Scrolled state
     &.scrolled {
         background-color: rgba(darken($secondary, 5%), 0.98);
         padding: 0.5rem 0;
@@ -144,6 +148,7 @@ $hover-color: darken($primary, 10%);
         }
     }
 
+    // Mobile styles
     @media (max-width: 992px) {
         &__menu {
             position: fixed;
@@ -159,7 +164,6 @@ $hover-color: darken($primary, 10%);
             gap: 2rem;
             transition: right 0.4s ease-in-out;
             box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
 
             &.active {
                 right: 0;
@@ -193,24 +197,28 @@ $hover-color: darken($primary, 10%);
 }
 
 .lang-btn {
-    background-color: $primary;
-    color: $text;
-    border: 1px solid $secondary;
+    background-color: #34856f;
+    /* $primary */
+    color: #fffce5;
+    /* $text */
+    border: 1px solid #0e241f;
+    /* $secondary */
     padding: 6px 12px;
     font-size: 14px;
     font-weight: 500;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
 
-    &:hover {
-        background-color: $accent;
-    }
+.lang-btn:hover {
+    background-color: #e44c59;
+    /* $accent */
 }
 
 @media (max-width: 768px) {
     .navbar__lang-switcher {
-        margin-inline: 10px;
+        margin-left: 10px;
     }
 
     .lang-btn {

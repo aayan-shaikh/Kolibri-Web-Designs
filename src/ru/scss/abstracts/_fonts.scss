@@ -1,0 +1,18 @@
+$heading-font: "ru-heading", sans-serif;
+$body-font: "ru-heading", sans-serif;
+
+// Font weight variables
+$thin-weight: 100;
+$extra-light-weight: 200;
+$light-weight: 300;
+$regular-weight: 400;
+$medium-weight: 500;
+$semi-bold-weight: 600;
+$bold-weight: 700;
+$extra-bold-weight: 800;
+$black-weight: 900;
+
+body {
+    font-family: $body-font;
+    font-weight: $regular-weight;
+}
