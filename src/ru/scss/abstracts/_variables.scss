@@ -1,0 +1,28 @@
+$bird-img-url: url("../../../assets/cursor-bird.avif");
+
+// Responsive breakpoints mixin
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==mobile {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==tablet {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==laptop {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==desktop {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+}

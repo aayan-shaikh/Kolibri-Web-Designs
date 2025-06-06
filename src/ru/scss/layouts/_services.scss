@@ -1,0 +1,688 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+
+/* @use "../components/" as *; */
+body {
+    font-family: $heading-font;
+    color: $text;
+
+    scroll-behavior: smooth;
+    /*For bookmark links*/
+
+    overflow-x: hidden; // Prevent horizontal scrolling
+}
+
+h1 {
+    color: $text;
+}
+
+p {
+    font-family: $body-font;
+
+
+}
+
+section {
+    width: 100%;
+}
+
+.wrapper {
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+}
+
+#services-hero {
+    height: 80vh;
+    color: $text;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0 0rem 0;
+    position: relative;
+    isolation: isolate;
+    max-width: 99vw;
+    overflow: hidden; // For floating elements
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background:
+            radial-gradient(circle at 75% 30%,
+                rgba($primary, 0.08) 0%,
+                transparent 30%),
+            linear-gradient(to bottom right,
+                transparent 60%,
+                rgba($accent, 0.05));
+        background-color: $secondary;
+        animation: gradientPulse 16s ease infinite alternate;
+    }
+
+    // Floating accent shapes
+    &::after {
+        content: "";
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 50%;
+        background: radial-gradient(circle,
+                rgba($accent, 0.1) 0%,
+                transparent 70%);
+        top: 20%;
+        left: 10%;
+        animation: float 25s ease-in-out infinite both;
+        z-index: -1;
+    }
+
+    h1,
+    p {
+        color: $text;
+
+        text-align: center;
+        max-width: 65ch;
+        margin-inline: auto;
+        opacity: 0; // Start hidden for fade-in
+        animation: fadeInUp 1s ease-out forwards;
+    }
+
+    h1 {
+        color: $text;
+
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        animation-delay: 0.3s;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, $primary, $accent);
+            margin: 1rem auto;
+            transform: scaleX(0);
+            transform-origin: center;
+            animation: scaleIn 0.8s 1s ease-out forwards;
+        }
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        animation-delay: 0.6s;
+    }
+
+
+
+}
+
+// Keyframes
+@keyframes gradientPulse {
+    0% {
+        background-size: 100% 100%;
+    }
+
+    50% {
+        background-size: 105% 105%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5vw, -3vh) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(10vw, 2vh) rotate(-3deg);
+    }
+
+    75% {
+        transform: translate(-5vw, 4vh) rotate(2deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: translateX(-50%) scaleX(0);
+    }
+
+    to {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+
+#web-design-and-dev {
+
+    display: flex;
+    padding-top: 4rem;
+    padding-inline: 1.5rem;
+    margin-inline: auto;
+
+
+    h1 {
+        color: $text;
+
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            h2 {
+                color: lighten($secondary, 40%);
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .services-conclusion {
+        position: relative;
+        padding: 3rem 1.5rem;
+        margin: 4rem auto;
+        max-width: 65ch;
+        text-align: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4rem;
+            height: 3px;
+            background: linear-gradient(90deg, $primary, $accent);
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            position: relative;
+            padding: 1.5rem 0;
+
+            &::before,
+            &::after {
+                content: "“";
+                position: absolute;
+                font-family: Georgia, serif;
+                font-size: 3.5rem;
+                color: rgba($primary, 0.15);
+                line-height: 1;
+            }
+
+            &::before {
+                top: 0;
+                left: -1rem;
+            }
+
+            &::after {
+                bottom: -1.5rem;
+                right: -1rem;
+                transform: rotate(180deg);
+            }
+        }
+
+        // Subtle animation on hover
+        &:hover {
+
+            p::before,
+            p::after {
+                animation: subtlePulse 1.5s ease infinite;
+            }
+        }
+    }
+
+    @keyframes subtlePulse {
+
+        0%,
+        100% {
+            opacity: 0.15;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: 0.25;
+            transform: scale(1.05);
+        }
+    }
+}
+
+#cta {
+    background: linear-gradient(135deg,
+            rgba($secondary, 0.98) 0%,
+            darken($secondary, 5%) 100%);
+    padding: 4rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    margin-bottom: -50px;
+
+    // Dynamic floating elements
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        filter: blur(30px);
+        opacity: 0.15;
+    }
+
+    &::before {
+        background: $primary;
+        width: 150px;
+        height: 150px;
+        top: -50px;
+        left: -50px;
+        animation: float 2s ease-in-out infinite alternate;
+    }
+
+    &::after {
+        background: $accent;
+        width: 200px;
+        height: 200px;
+        bottom: -80px;
+        right: -80px;
+        animation: float 16s ease-in-out infinite alternate-reverse;
+    }
+
+    #cta__title {
+        color: $text;
+
+        font-size: clamp(1.5rem, 4vw, 2.25rem);
+        line-height: 1.4;
+        margin-bottom: 2rem;
+        max-width: 25ch;
+        margin-inline: auto;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, $primary, $accent);
+            margin: 1.5rem auto 0;
+            transform: scaleX(0);
+            transform-origin: center;
+            animation: scaleIn 0.8s 0.3s ease-out forwards;
+        }
+    }
+
+    #cta__button {
+        background: linear-gradient(90deg,
+                $primary 0%,
+                lighten($primary, 8%) 100%);
+        color: $text;
+        border: none;
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba($primary, 0.3);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    transparent 0%,
+                    rgba(white, 0.2) 50%,
+                    transparent 100%);
+            transition: left 0.6s ease;
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba($primary, 0.4);
+
+            &::before {
+                left: 100%;
+            }
+        }
+
+        &:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 10px rgba($primary, 0.4);
+        }
+    }
+}
+
+// Animations
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, -20px);
+    }
+}
+
+@keyframes scaleIn {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+// Add this to your _services.scss file
+
+// Pricing section styles
+// Add this to your _services.scss file
+
+// Pricing section styles
+#pricing-section {
+    padding: 5rem 0;
+    background-color: $secondary;
+
+    @include responsive(mobile) {
+        padding: 3rem 0;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .pricing-title {
+        width: 100%;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: $text;
+        position: relative;
+        display: inline-block;
+        margin: 0 auto 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: $primary;
+        }
+
+        @include responsive(mobile) {
+            font-size: 2rem;
+        }
+    }
+
+    .pricing-highlight {
+        text-align: center;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        background: linear-gradient(145deg,
+                lighten($secondary, 5%),
+                $secondary );
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(darken($secondary, 10%), 0.3);
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: $text;
+
+            @include responsive(mobile) {
+                font-size: 1.6rem;
+            }
+        }
+
+        .price-accent {
+            color: $primary;
+            font-weight: 700;
+        }
+
+        .one-time-option {
+            font-size: 1.4rem;
+            color: darken($text, 10%);
+
+            @include responsive(mobile) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .pricing-benefits {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 4rem;
+
+        @include responsive(tablet) {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            background: linear-gradient(145deg,
+                    lighten($secondary, 8%),
+                    lighten($secondary, 3%));
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(darken($secondary, 15%), 0.2);
+
+            .benefit-icon {
+                margin-right: 1rem;
+                color: $primary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background-color: rgba($primary, 0.2);
+                border-radius: 50%;
+                flex-shrink: 0;
+            }
+
+            .benefit-content {
+                h3 {
+                    color: $text;
+                    margin-bottom: 0.5rem;
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    color: darken($text, 15%);
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+
+    .pricing-options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        @include responsive(tablet) {
+            grid-template-columns: 1fr;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: linear-gradient(145deg,
+                    lighten($secondary, 8%),
+                    lighten($secondary, 3%));
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(darken($secondary, 15%), 0.3);
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(darken($secondary, 15%), 0.4);
+            }
+
+            &.featured {
+                border: 2px solid #aaa044;
+                position: relative;
+                transform: scale(1.03);
+
+                &:hover {
+                    transform: translateY(-5px) scale(1.03);
+                }
+
+                .pricing-badge {
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    background: $primary;
+                    color: $text;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    padding: 0.3rem 0.8rem;
+                    border-radius: 20px;
+                }
+            }
+
+            &.starter {
+                position: relative;
+                border: 2px solid #7dcea0; // A light green color
+
+                .pricing-badge {
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    background: #7dcea0;
+                    color: invert($text);
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    padding: 0.3rem 0.8rem;
+                    border-radius: 20px;
+                }
+            }
+
+            .pricing-card-header {
+                padding: 2rem;
+                text-align: center;
+                border-bottom: 1px solid rgba($text, 0.1);
+                position: relative;
+
+                h3 {
+                    font-size: 1.4rem;
+                    color: $text;
+                    margin-bottom: 1rem;
+                }
+
+                .pricing-amount {
+                    margin-bottom: 0.5rem;
+
+                    .price {
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                        color: $primary;
+                    }
+
+                    .period {
+                        font-size: 1rem;
+                        color: darken($text, 20%);
+                    }
+                }
+
+                .pricing-detail {
+                    font-size: 0.95rem;
+                    color: darken($text, 15%);
+                }
+            }
+
+            .pricing-card-body {
+                padding: 2rem;
+
+                .pricing-features {
+                    list-style: none;
+                    margin-bottom: 1.5rem;
+
+                    li {
+                        position: relative;
+                        padding-left: 1.5rem;
+                        margin-bottom: 0.8rem;
+                        color: darken($text, 10%);
+
+                        &:before {
+                            content: "✓";
+                            position: absolute;
+                            left: 0;
+                            color: $primary;
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .pricing-cta-btn {
+                    width: 100%;
+                    padding: 1rem;
+                    background: linear-gradient(135deg,
+                            $primary,
+                            darken($primary, 10%));
+                    color: $text;
+                    border: none;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: linear-gradient(135deg,
+                                lighten($primary, 5%),
+                                $primary );
+                        transform: translateY(-2px);
+                        box-shadow: 0 5px 15px rgba(darken($primary, 20%), 0.4);
+                    }
+                }
+            }
+        }
+    }
+}

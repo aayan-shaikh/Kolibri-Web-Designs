@@ -1,0 +1,43 @@
+/* typography.scss improvements */
+@use "../abstracts" as *;
+
+// More fluid typography approach with clamp
+$heading-font-size: clamp(2rem, 4vw, 4rem);
+$heading-mobile-size: clamp(1.8rem, 8vw, 3rem);
+$section-body-font-size: clamp(1rem, 1.4vw, 1.4rem);
+$section-body-mobile-size: clamp(0.9rem, 4vw, 1.2rem);
+
+h1 {
+    font-size: $heading-font-size;
+    font-weight: 900;
+    line-height: 1.2em;
+    text-transform: uppercase;
+
+    @include responsive(tablet) {
+        font-size: $heading-mobile-size;
+    }
+}
+
+p {
+    font-size: $section-body-font-size;
+    font-family: $body-font;
+    font-weight: 400;
+
+    @include responsive(tablet) {
+        font-size: $section-body-mobile-size;
+    }
+}
+
+.heading-toptitle {
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: darken($primary, 10%);
+    font-size: clamp(0.8rem, 1vw, 1.1rem);
+
+    @include responsive(mobile) {
+        margin-inline: auto;
+        letter-spacing: 0.1em;
+    }
+}
