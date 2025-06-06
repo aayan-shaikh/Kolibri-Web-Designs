@@ -1,66 +1,74 @@
-# Kolibri Web Designs 🌿
-
-[![Version](https://img.shields.io/badge/version-1.0.0-34856f.svg)](https://github.com/kolibriwebdesigns/kolibriwebdesigns)
-[![License: ISC](https://img.shields.io/badge/License-ISC-e44c59.svg)](https://opensource.org/licenses/ISC)
-[![Parcel](https://img.shields.io/badge/Built%20with-Parcel-0e241f.svg)](https://parceljs.org/)
-
-Welcome to **Kolibri Web Designs**, a vibrant and modern web design project crafted to deliver stunning, responsive websites for small businesses. With a focus on creativity and functionality, Kolibri brings your digital presence to life in both **English** and **Russian** languages. 🌍
-
-## 📖 About
-
-Kolibri Web Designs is a front-end project built with HTML, SCSS, and JavaScript, powered by [Parcel](https://parceljs.org/) for a seamless development and build experience. It features a bilingual website structure (English at `/` and Russian at `/ru/`) with a sleek navbar, portfolio, and more. The project emphasizes clean code, accessibility, and a visually appealing design inspired by a natural color palette.
-
-- **Version**: 1.0.0
-- **License**: ISC
-- **Purpose**: Showcase web design expertise with a focus on small business solutions.
-
-## ✨ Features
-
-- **Bilingual Support**: Seamless English and Russian versions (`/ru/`).
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
-- **Modern Styling**: Built with SCSS, leveraging Bootstrap Icons and custom fonts.
-- **Fast Development**: Powered by Parcel for hot-reloading and optimized builds.
-- **Sitemap Integration**: Includes `sitemap.xml` for SEO in both language versions.
-
-## 🛠️ Installation
-
-To get started with Kolibri Web Designs, follow these steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/kolibriwebdesigns/kolibriwebdesigns.git
-   cd kolibriwebdesigns
+Kolibri Web Designs 🐦✨
 
 
-Install dependencies:
-npm install
+  
 
 
-Ensure Node.js and npm are installed:
+Welcome to Kolibri Web Designs, where we flit through code like hummingbirds sipping nectar from the digital jungle! 🌿 This project crafts vibrant, responsive websites for small businesses, buzzing with emerald greens (#34856f) and coral pops (#e44c59). Built with love by Aayan Shaikh, Kolibri delivers bilingual magic in English and Russian, making your online presence soar. 🚀
 
-Node.js (v14 or higher recommended)
-npm (v6 or higher)
+Why Kolibri? Because like a hummingbird, we’re small, agile, and pack a colorful punch! Don’t let bugs bug you—our sites are as smooth as a hummingbird’s hover.
+
+📑 Table of Contents
+
+🌟 Features
+🛠️ Getting Started
+🚀 Usage
+📜 Scripts
+🧰 Tech Stack
+🤝 Contributing
+👨‍💻 About the Creator
+📄 License
+
+🌟 Features
+Kolibri Web Designs is packed with features to make your website hum with excitement:
+
+🐦 Bilingual Brilliance: Flit between English (/) and Russian (/ru/) with ease.
+📱 Responsive Magic: Looks stunning on desktops, tablets, and phones—like a hummingbird darting through any screen size.
+🎨 Vibrant Styling: SCSS-powered designs with Bootstrap Icons and custom fonts, in lush greens and coral accents.
+⚡ Blazing Fast: Parcel bundles assets faster than a hummingbird’s wings (up to 300 flaps per second, fun fact!).
+🗺️ SEO Ready: Sitemaps for both languages, ensuring search engines love your site.
+
+🛠️ Getting Started
+Ready to make your website flutter? Follow these steps to set up Kolibri locally.
+Prerequisites
+
+Node.js (v14+): The engine powering our digital wings.
+npm (v6.6+): Our nectar for fetching dependencies.
+Installation:
+
+  # Clone the repo
+  git clone https://github.com/aayanshaikh/kolibri-webdesigns.git
+  # Navigate to the project
+  cd kolibriwebdesigns
+  # Install dependencies
+  npm install
 
 
+💡 ProTip: Ensure your terminal’s ready to buzz—run node -v and npm -v to check versions!
 
 🚀 Usage
-Run the project locally or build it for production using the provided npm scripts.
-Development
-Start a local development server with hot-reloading for both English and Russian versions:
+Launch Kolibri’s development server or build for production to see your site take flight.
+Development Mode
+Spin up a local server with hot-reloading for both English and Russian sites:
 npm run dev
 
 
-Access the English site at http://localhost:1234.
-Access the Russian site at http://localhost:1234/ru/.
+🇬🇧 English: http://localhost:1234
+🇬🇧 English: http://kolibriwebdesigns.com
+🇷🇺 Русский: http://localhost:8080/ru/
+🇷🇺 Русский: http://kolibriwebdesigns.com/ru/
 
+Watch your changes flit live, no refresh needed!
 Production Build
-Build the project for deployment, including optimized assets and sitemaps:
 npm run build
 
 
-Output is generated in the dist/ folder.
-Sitemaps are copied to dist/sitemap.xml and dist/ru/sitemap.xml.
-The --public-url / flag ensures correct asset paths for root deployment.
+📂 Output: Optimized files in /dist/, ready to deploy.
+🌐 Public URL: Assets served at /, perfect for hosting.
+🗺️ Sitemaps: Copied to dist/sitemap.xml and dist/ru/sitemap.xml for SEO.
+
+
+😂 Fun Fact: Our build is so fast, it could outrun a hummingbird mascot in a race to the cloud!
 
 📜 Scripts
 
@@ -72,32 +80,41 @@ Description
 
 
 npm run dev
-Starts a development server with Parcel, serving src/index.html and src/ru/index.html.
+Starts Parcel’s dev server for src/index.html and src/ru/index.html.
 
 
 npm run build
-Builds the project for production, optimizing assets and copying sitemap.xml to dist/ and dist/ru/.
+Builds optimized assets, copies sitemaps to dist/ and dist/ru/.
 
 
-🧰 Technologies
+🧰 Tech Stack
+Kolibri’s toolkit is as nimble as a hummingbird’s beak:
 
-Parcel: Zero-config bundler for fast development and production builds.
-SCSS: Preprocessed CSS for modular and maintainable styles.
-Bootstrap Icons: Lightweight icon library for UI elements.
-SVGO: SVG optimization for performance.
-Sass: CSS preprocessor for enhanced styling.
+Parcel: Zero-config bundler for speedy builds.
+Sass: SCSS for modular, colorful styles.
+Bootstrap Icons: Lightweight icons for UI flair.
+SVGO: Optimizes SVGs for feather-light assets.
+HTML/JavaScript: The nectar holding it all together.
 
 🤝 Contributing
-Contributions are welcome! To contribute:
+Want to help Kolibri soar higher? Contributions are as welcome as a hummingbird to a flower garden! 🌸
 
-Fork the repository.
-Create a feature branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -m 'Add your feature').
-Push to the branch (git push origin feature/your-feature).
-Open a Pull Request.
+🍴 Fork the repo.
+🌿 Create a branch: git checkout -b feature/hummingbird-tweak.
+🐦 Commit changes: git commit -m 'Added sparkly new feature'.
+🚀 Push: git push origin feature/hummingbird-tweak.
+📬 Open a Pull Request.
 
-Please ensure your code follows the project’s style guidelines and includes tests where applicable.
+Please keep code as clean as a hummingbird’s feathers and follow our style guide.
+👨‍💻 About the Creator
+Hi, I’m Aayan Shaikh, the brain behind Kolibri’s buzzing designs! I’m passionate about crafting websites that flit into users’ hearts. Reach out to me:
+
+📧 Email: aayan@aayanshaikh.com
+📞 Phone: +91 9767596361
+🌐 GitHub: aayanshaikh
+
+Got a project? Let’s make it hum together!
 📄 License
-This project is licensed under the ISC License.
+Kolibri Web Designs is licensed under the ISC License. Feel free to use, modify, and share—just don’t clip our wings! 🐦
 
-Kolibri Web Designs © 2025 | Crafted with 🌱 by the Kolibri team.```
+Kolibri Web Designs © 2025 | Built with 💚 by Aayan Shaikh. Let’s flit to new digital heights!
