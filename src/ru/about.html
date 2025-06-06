@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--  Essential META Tags -->
-    <meta property="og:title" content="Kolibri Web Designs About | Small Business Web Designer">
+    <meta property="og:title" content="О нас | Kolibri Web Designs">
     <meta property="og:type" content="website" />
     <meta property="og:image" content="../../assets/wa-kolibri-logo.avif">
     <meta property="og:url" content="https:kolibriwebdesigns.com/about">
@@ -14,14 +14,13 @@
 
     <!--  Non-Essential, But Recommended -->
     <meta property="og:description"
-        content="About | 100% hand-coded websites with superior results. As well as Google Ads and SEO services.">
-    <meta property="og:site_name" content="About | Kolibri Web Designs">
-    <meta name="twitter:image:alt" content="About | Kolibri Web Designs">
+        content="О нас | 100% ручная разработка веб-сайтов с превосходными результатами. А также услуги Google Ads и SEO.">
+    <meta property="og:site_name" content="О нас | Kolibri Web Designs">
+    <meta name="twitter:image:alt" content="О нас | Kolibri Web Designs">
     <!-- META END -->
 
-    <title>About Us | Kolibri Web Designs</title>
+    <title>О нас | Kolibri Web Designs</title>
     <meta name="theme-color" content="#34856f">
-
 
     <!-- FONTS -->
     <link rel="preload" as="style"
@@ -46,36 +45,41 @@
         <div class="navbar__container">
             <a href="/" class="navbar__logo">
                 <span class="navbar__logo-icon"><img src="../../assets/Kolibri Logo ENG Text.avif" height="50px"
-                        alt="" /></span>
+                        alt="Логотип Kolibri Web Designs" /></span>
                 Kolibri
             </a>
 
             <ul class="navbar__menu">
                 <li>
-                    <a href="/" class="navbar__menu-link">Home</a>
+                    <a href="./" class="navbar__menu-link">Главная</a>
                 </li>
                 <li>
-                    <a href="./services.html" class="navbar__menu-link">Services</a>
+                    <a href="./services.html" class="navbar__menu-link">Услуги</a>
                 </li>
                 <li>
-                    <a href="./portfolio.html" class="navbar__menu-link">Portfolio</a>
+                    <a href="./portfolio.html" class="navbar__menu-link">Портфолио</a>
                 </li>
                 <li>
-                    <a href="about.html" class="navbar__menu-link active">About</a>
+                    <a href="about.html" class="navbar__menu-link active">О нас</a>
                 </li>
-                <!-- <li><a href="/blog" class="navbar__menu-link">Blog</a></li> -->
+                <!-- <li><a href="/blog" class="navbar__menu-link">Блог</a></li> -->
                 <li>
-                    <a href="./contact.html" class="navbar__menu-link">Contact</a>
+                    <a href="./contact.html" class="navbar__menu-link">Контакты</a>
                 </li>
             </ul>
 
             <div class="navbar__cta">
                 <a href="./contact.html">
-                    <button class="nav-btn">Get a Quote</button>
+                    <button class="nav-btn">Получить предложение</button>
                 </a>
             </div>
+            <div class="navbar__lang-switcher">
+                <button class="lang-btn" aria-label="Переключить на английский" onclick="switchLanguage('en')">
+                    EN
+                </button>
+            </div>
 
-            <button class="navbar__hamburger" aria-label="Menu">
+            <button class="navbar__hamburger" aria-label="Меню">
                 <span class="navbar__hamburger-line"></span>
                 <span class="navbar__hamburger-line"></span>
                 <span class="navbar__hamburger-line"></span>
@@ -86,36 +90,31 @@
 
     <section id="hero-about">
         <div class="wrapper">
-            <img class="about__img" src="../../assets/Kolibri Logo ENG Text.avif" alt="" />
+            <img class="about__img" src="../../assets/Kolibri Logo ENG Text.avif" alt="Логотип Kolibri Web Designs" />
             <span class="heading-toptitle">
-                Kolibri Web Designs, We Make Websites With Purpose & Intent
+                Kolibri Web Designs, создаем веб-сайты с целью и намерением
             </span>
             <p class="about__content">
-                My name is Aayan, I am the owner and lead developer of
-                Kolibri Web Designs, a web design and development agency
-                built with my partner. I got into programming
-                before University. I wanted a career that I can do from home
-                and still be travelling around the world. So over the course
-                of one year I taught myself how to code websites the right
-                way by hand. What I found was that a lot of small businesses
-                don't have the funds to spend thousands of dollars upfront
-                on a new website. And the ones that did, got taken advantage
-                of and have a terrible website that looks like it was built
-                by someone in a cave and haven't seen design trends for the
-                last 10 years. They were in a frustrating spot - they either
-                can't afford a good website, and if they can they don't know
-                who to trust to make something great. So we have a business
-                model to fit their needs.
+                Меня зовут Ааян, я владелец и ведущий разработчик Kolibri Web Designs,
+                агентства веб-дизайна и разработки, созданного вместе с моим партнером.
+                Я начал программировать еще до университета. Я хотел карьеру,
+                которая позволяла бы работать из дома и путешествовать по миру.
+                За год я самостоятельно научился создавать веб-сайты вручную правильным способом.
+                Я обнаружил, что многие малые бизнесы не могут позволить себе тратить тысячи долларов
+                на новый сайт. А те, кто мог, часто становились жертвами обмана, получая ужасные сайты,
+                будто созданные без учета современных трендов дизайна. Они оказывались в сложной ситуации:
+                либо не могли позволить себе хороший сайт, либо не знали, кому доверять.
+                Поэтому мы разработали бизнес-модель, соответствующую их потребностям.
             </p>
-            <button class="primary-btn">Get Started</button>
+            <button class="primary-btn">Начать</button>
         </div>
     </section>
     <section id="cta">
         <h1 id="cta__title">
-            Ready to elevate your online presence? Schedule a consultation
-            to explore our tailored approach.
+            Готовы улучшить свое присутствие в интернете? Запишитесь на консультацию,
+            чтобы узнать о нашем индивидуальном подходе.
         </h1>
-        <button id="cta__button"><a href="./contact.html">Free online consultation</a></button>
+        <button id="cta__button"><a href="./contact.html">Бесплатная онлайн-консультация</a></button>
     </section>
 
     <footer class="footer">
@@ -123,8 +122,8 @@
             <div class="footer__section">
                 <h3 class="footer__section-title">Kolibri</h3>
                 <p class="footer__section-text">
-                    We craft beautiful, functional websites that help
-                    businesses in and beyond soar to new heights.
+                    Мы создаем красивые и функциональные веб-сайты, которые помогают
+                    бизнесам в России и за ее пределами достигать новых высот.
                 </p>
                 <div class="footer__social">
                     <a href="#" class="footer__social-link" aria-label="Telegram">
@@ -141,88 +140,90 @@
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 8H16V6H14V8Z" fill="currentColor" />
                             <path
-                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M7 9H9V15H7V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M15 9H17V15H15V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M11 12H13V15H11V12Z" stroke="currentColor" stroke-width="1.5"
+                                d="M12 22C17.5228 22 22 17-22.5228 22 Z0C22 6 17.47715 14m0 1C8 8 0 C17 12C2 6.47715 12 2C22.47715 6.47715 12 2C17.5228.5228 0 12 C8 0 8 0 8 16" />
+                            <path d="M7 9H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15 9H17V15H15V9Z" stroke="currentColor" stroke="M" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 12H17V15H11V12H" stroke="currentColor" stroke="M" stroke-width="1.5" stroke="M"
+                                stroke-linecap="round" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </a>
                     <a href="#" class="footer__social-link" aria-label="WhatsApp">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="0" stroke-linecap="round" stroke-linejoin="round"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M8 12L10 10L12 12L14 10L16 12" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                                d="M12 22C17.5228 22 22 17 22.5228 22 0 12 C6 17.47715 2 2.47715 6 2 0 12 C6 17.47715 2.5228 0 12 C17.5228.5228 0 22 C22" />
+                            <path d="M8 12L10 10 L12 10 12 12 L14 10 L17 16" />
                         </svg>
                     </a>
                 </div>
             </div>
 
             <div class="footer__section">
-                <h3 class="footer__section-title">Services</h3>
-                <ul class="footer__section-links">
-                    <li class="footer__section-link">
-                        <a href="/services">Web Development & Design</a>
+                <h3 class="footer__section-title">Услуги</h3>
+                <ul class="grid__section-links">
+                    <li class="footer__section-item">
+                        <a href="./services.html">Веб-разработка и дизайн</a>
                     </li>
-
-                    <li class="footer__section-link">
-                        <a href="/services">SEO Optimization</a>
+                    <li class="footer__section-item">
+                        <a href="./services.html">SEO-оптимизация</a>
                     </li>
-                    <li class="footer__section-link">
-                        <a href="/services">Branding</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__section">
-                <h3 class="footer__section-title">Contact</h3>
-                <ul class="footer__section-links">
-                    <li class="footer__section-link">
-                        <a href="mailto:aayan@aayanshaikh.com">aayan@aayanshaikh.com</a>
-                    </li>
-                    <li class="footer__section-link">
-                        <a href="tel:+79991234567">+91 9767596361</a>
-                    </li>
-                    <li class="footer__section-link">
-                        <address>Globally Based</address>
+                    <li class="footer__content-item">
+                        <a href="./services.html">Брендинг</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="footer__section">
-                <h3 class="footer__section-title">Contact Us</h3>
-                <p class="footer__section-text">
-                    Get a <a href="./contact.html"> Free online consultation</a> within 24 hours.
+            <div class="footer__content">
+                <h3 class="footer__content-title">Контакты</h3>
+                <ul class="footer__section-links">
+                    <li class="footer__section-item">
+                        <a href="mailto:aayan@aayan@aayanshaikh.com">aayan@aayanshaikh.com</a>
+                    </li>
+                    <li class="footer__content-item">
+                        <a href="tel:+919767596361">+919767596361</a>
+                    </li>
+                    <li class="footer__content">
+                        <address>Работаем по всему Работу</address>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container__section">
+                <h3 class="container__section-title">Свяжитесь с нами</h3>
+                <p class="container__section-text">
+                    Получите <a href="./contact.html">бесплатную консультацию</a> в течение 48 часов.
                 </p>
-                <form netlify method="POST" name="footer-cta" class="footer__newsletter">
-                    <input type="hidden" name="form-name" value="footer-cta" />
-                    <input type="email" name="email" placeholder="Your email" required />
+                <form netlify method="POST" name="netlify-cta" id="footer__container" class="footer__content">
+                    <input type="hidden" name="action" type="footer-cta" value="footer__content" />
+                    <div>
+                        <input type="text" name="email" placeholder="Ваш email" required />
+                    </div>
 
-                    <button type="submit" class="primary-btn" style="margin-top: 10px; width: 100%">
-                        free request
+                    <button type="submit" class="primary-btn btn" style="margin-top:10px; width:100%;">
+                        Бесплатный доступ
                     </button>
                 </form>
             </div>
+
         </div>
 
-        <div class="footer__bottom">
-            <p class="footer__bottom-copyright">
-                &copy; 2025 Kolibri Web Designs. All rights reserved.
+        <div class="container__footer">
+            <p class="footer-content">
+                ©© 2025 Kolibri Inc. Все права защищены.
             </p>
-            <div class="footer__bottom-links">
-                <a href="#" class="footer__bottom-link">Privacy Policy</a>
-                <a href="#" class="footer__bottom-link">Terms of Service</a>
+            <div class="footer__content">
+                <a href="#" class="footer__content-item">Политика конфиденциальности</a>
+                <a href="#" class="footer__content">Условия предоставления</a>
             </div>
         </div>
+        </div>
     </footer>
-    <script src="../../assets/hero-bird.avif"></script>
+    <!-- <script src=".../assets/hero-bird.png"></script> -->
     <script src="../../scripts/about.js"></script>
 </body>
 

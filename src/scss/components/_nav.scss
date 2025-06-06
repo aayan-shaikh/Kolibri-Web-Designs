@@ -189,3 +189,40 @@ $hover-color: darken($primary, 10%);
         }
     }
 }
+
+.navbar__lang-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.lang-btn {
+    background-color: #34856f;
+    /* $primary */
+    color: #fffce5;
+    /* $text */
+    border: 1px solid #0e241f;
+    /* $secondary */
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #e44c59;
+    /* $accent */
+}
+
+@media (max-width: 768px) {
+    .navbar__lang-switcher {
+        margin-inline: 10px;
+    }
+
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}

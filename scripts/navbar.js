@@ -26,4 +26,34 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.classList.remove("scrolled");
     }
   });
+
+  // Language switcher function
+  function switchLanguage(lang) {
+    console.log(`Switching to language: ${lang}`);
+    const currentPath = window.location.pathname;
+    let newPath;
+
+    if (lang === 'ru') {
+      // If already on root or English path, prepend /ru/
+      if (currentPath === '/' || !currentPath.startsWith('/ru/')) {
+        newPath = currentPath === '/' ? '/ru/' : `/ru${currentPath}`;
+      } else {
+        newPath = currentPath; // Already in Russian
+      }
+    } else {
+      // Switch to English by removing /ru/
+      newPath = currentPath.startsWith('/ru/') ? currentPath.replace('/ru/', '/') : currentPath;
+      if (newPath === '') newPath = '/'; // Ensure root path
+    }
+
+    console.log(`Redirecting to: ${newPath}`);
+    if (newPath !== currentPath) {
+      window.location.href = newPath;
+    } else {
+      console.log('No redirect needed; already on the correct language path.');
+    }
+  }
+
+  // Expose switchLanguage to global scope for onclick
+  window.switchLanguage = switchLanguage;
 });
