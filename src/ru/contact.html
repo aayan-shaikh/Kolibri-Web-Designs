@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--  Essential META Tags -->
-    <meta property="og:title" content="Kolibri Web Designs | Small Business Web Designer">
+    <meta property="og:title" content="Свяжитесь с нами | Kolibri Web Designs">
     <meta property="og:type" content="website" />
     <meta property="og:image" content="../../assets/wa-kolibri-logo.avif">
     <meta property="og:url" content="https:kolibriwebdesigns.com">
@@ -14,13 +14,12 @@
 
     <!--  Non-Essential, But Recommended -->
     <meta property="og:description"
-        content="Contact Us | 100% hand-coded websites with superior results. As well as Google Ads and SEO services.">
-    <meta property="og:site_name" content="Contact Us | Kolibri Web Designs">
-    <meta name="twitter:image:alt" content="Contact Us | Kolibri Web Designs">
+        content="Свяжитесь с нами | 100% ручная разработка веб-сайтов с превосходными результатами. А также услуги Google Ads и SEO.">
+    <meta property="og:site_name" content="Свяжитесь с нами | Kolibri Web Designs">
+    <meta name="twitter:image:alt" content="Свяжитесь с нами | Kolibri Web Designs">
 
-    <title>Contact Us | Kolibri Web Designs</title>
+    <title>Свяжитесь с нами | Kolibri Web Designs</title>
     <meta name="theme-color" content="#34856f">
-
 
     <!-- FONTS -->
     <link rel="preload" as="style"
@@ -51,30 +50,35 @@
 
             <ul class="navbar__menu">
                 <li>
-                    <a href="/" class="navbar__menu-link">Home</a>
+                    <a href="./" class="navbar__menu-link">Главная</a>
                 </li>
                 <li>
-                    <a href="./services.html" class="navbar__menu-link">Services</a>
+                    <a href="./services.html" class="navbar__menu-link">Услуги</a>
                 </li>
                 <li>
-                    <a href="./portfolio.html" class="navbar__menu-link">Portfolio</a>
+                    <a href="./portfolio.html" class="navbar__menu-link">Портфолио</a>
                 </li>
                 <li>
-                    <a href="about.html" class="navbar__menu-link">About</a>
+                    <a href="about.html" class="navbar__menu-link">О нас</a>
                 </li>
-                <!-- <li><a href="/blog" class="navbar__menu-link">Blog</a></li> -->
+                <!-- <li><a href="/blog" class="navbar__menu-link">Блог</a></li> -->
                 <li>
-                    <a href="./contact.html" class="navbar__menu-link active">Contact</a>
+                    <a href="./contact.html" class="navbar__menu-link active">Контакты</a>
                 </li>
             </ul>
 
             <div class="navbar__cta">
                 <a href="./contact.html">
-                    <button class="nav-btn">Get a Quote</button>
+                    <button class="nav-btn">Получить предложение</button>
                 </a>
             </div>
+            <div class="navbar__lang-switcher">
+                <button class="lang-btn" aria-label="Переключить на английский" onclick="switchLanguage('en')">
+                    EN
+                </button>
+            </div>
 
-            <button class="navbar__hamburger" aria-label="Menu">
+            <button class="navbar__hamburger" aria-label="Меню">
                 <span class="navbar__hamburger-line"></span>
                 <span class="navbar__hamburger-line"></span>
                 <span class="navbar__hamburger-line"></span>
@@ -86,12 +90,11 @@
     <main>
         <section id="contact-hero">
             <div class="wrapper">
-                <h1 class="page-title">Get In Touch</h1>
+                <h1 class="page-title">Свяжитесь с нами</h1>
                 <p>
-                    Ready to elevate your digital presence with a
-                    custom-coded website? Reach out to discuss your project
-                    needs and discover how our tailored approach can help
-                    your business stand out online.
+                    Готовы улучшить свое цифровое присутствие с помощью веб-сайта, разработанного вручную? Напишите нам,
+                    чтобы обсудить ваши потребности и узнать, как наш индивидуальный подход поможет вашему бизнесу
+                    выделиться в интернете.
                 </p>
             </div>
         </section>
@@ -100,7 +103,7 @@
             <div class="wrapper">
                 <div class="contact-container">
                     <div class="contact-info">
-                        <h2>How to Reach Us</h2>
+                        <h2>Как с нами связаться</h2>
                         <div class="info-item">
                             <span class="icon">📧</span>
                             <p>aayan@aayanshaikh.com</p>
@@ -111,16 +114,15 @@
                         </div>
                         <div class="info-item">
                             <span class="icon">📍</span>
-                            <p>Worldwide</p>
+                            <p>По всему миру</p>
                         </div>
 
                         <div class="consultation-note">
-                            <h3>Our Consultation Process</h3>
+                            <h3>Наш процесс консультации</h3>
                             <p>
-                                We begin with understanding your business
-                                goals and website needs. After our initial
-                                discussion, we'll provide a custom proposal
-                                tailored to your specific requirements.
+                                Мы начинаем с понимания ваших бизнес-целей и потребностей веб-сайта. После первого
+                                обсуждения мы предоставим индивидуальное предложение, адаптированное к вашим
+                                требованиям.
                             </p>
                         </div>
                     </div>
@@ -128,48 +130,47 @@
                     <form name="contact" netlify method="POST" class="contact-form">
                         <input type="hidden" name="form-name" value="contact" />
 
-
-                        <h2>Send Us a Message</h2>
+                        <h2>Отправьте нам сообщение</h2>
 
                         <div class="form-group">
-                            <label for="name">Full Name</label>
+                            <label for="name">Полное имя</label>
                             <input type="text" id="name" name="name" required />
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label for="email">Адрес электронной почты</label>
                             <input type="email" id="email" name="email" required />
                         </div>
 
                         <div class="form-group">
-                            <label for="phone">Phone Number (Optional)</label>
+                            <label for="phone">Номер телефона (необязательно)</label>
                             <input type="tel" id="phone" name="phone" />
                         </div>
 
                         <div class="form-group">
-                            <label for="service">Service Interested In</label>
+                            <label for="service">Интересующая услуга</label>
                             <select id="service" name="service">
-                                <option value="">Please select...</option>
+                                <option value="">Пожалуйста, выберите...</option>
                                 <option value="custom-website">
-                                    Custom Website Development
+                                    Разработка индивидуального веб-сайта
                                 </option>
                                 <option value="redesign">
-                                    Website Redesign
+                                    Редизайн веб-сайта
                                 </option>
                                 <!-- <option value="ecommerce">
-                                        E-Commerce Solution
+                                        Решение для электронной коммерции
                                     </option> -->
                                 <option value="consultation">
-                                    Consultation Only
+                                    Только консультация
                                 </option>
                                 <option value="other">
-                                    Other (Please specify)
+                                    Другое (пожалуйста, укажите)
                                 </option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="message">Your Message</label>
+                            <label for="message">Ваше сообщение</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
 
@@ -180,13 +181,12 @@
                                     name="newsletter"
                                 />
                                 <label for="newsletter"
-                                    >Subscribe to our newsletter for web design
-                                    tips and insights</label
+                                    >Подписаться на нашу рассылку для получения советов и идей по веб-дизайну</label
                                 >
                             </div> -->
 
                         <button type="submit" id="submit-btn" class="cta__button">
-                            Send Message
+                            Отправить сообщение
                         </button>
                     </form>
                 </div>
@@ -195,10 +195,9 @@
 
         <section id="cta">
             <h1 id="cta__title">
-                Have questions before reaching out? Schedule a no-obligation
-                discovery call.
+                Есть вопросы перед тем, как связаться? Запланируйте необязательный ознакомительный звонок.
             </h1>
-            <button id="cta__button"><a href="./contact.html">Free online consultation</a></button>
+            <button id="cta__button"><a href="./contact.html">Бесплатная онлайн-консультация</a></button>
         </section>
     </main>
 
@@ -207,8 +206,8 @@
             <div class="footer__section">
                 <h3 class="footer__section-title">Kolibri</h3>
                 <p class="footer__section-text">
-                    We craft beautiful, functional websites that help
-                    businesses in and beyond soar to new heights.
+                    Мы создаем красивые и функциональные веб-сайты, которые помогают бизнесам в России и за ее пределами
+                    достигать новых высот.
                 </p>
                 <div class="footer__social">
                     <a href="#" class="footer__social-link" aria-label="Telegram">
@@ -250,47 +249,47 @@
             </div>
 
             <div class="footer__section">
-                <h3 class="footer__section-title">Services</h3>
+                <h3 class="footer__section-title">Услуги</h3>
                 <ul class="footer__section-links">
                     <li class="footer__section-link">
-                        <a href="/services">Web Development & Design</a>
+                        <a href="/services">Веб-разработка и дизайн</a>
                     </li>
 
                     <li class="footer__section-link">
-                        <a href="/services">SEO Optimization</a>
+                        <a href="/services">SEO-оптимизация</a>
                     </li>
                     <li class="footer__section-link">
-                        <a href="/services">Branding</a>
+                        <a href="/services">Брендинг</a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer__section">
-                <h3 class="footer__section-title">Contact</h3>
+                <h3 class="footer__section-title">Контакты</h3>
                 <ul class="footer__section-links">
                     <li class="footer__section-link">
                         <a href="mailto:aayan@aayanshaikh.com">aayan@aayanshaikh.com</a>
                     </li>
                     <li class="footer__section-link">
-                        <a href="tel:+79991234567">+91 9767596361</a>
+                        <a href="tel:+919767596361">+91 9767596361</a>
                     </li>
                     <li class="footer__section-link">
-                        <address>Globally Based</address>
+                        <address>Работаем по всему миру</address>
                     </li>
                 </ul>
             </div>
 
             <div class="footer__section">
-                <h3 class="footer__section-title">Contact Us</h3>
+                <h3 class="footer__section-title">Свяжитесь с нами</h3>
                 <p class="footer__section-text">
-                    Get a <a href="./contact.html">Free online consultation</a> within 24 hours.
+                    Получите <a href="./contact.html">бесплатную онлайн-консультацию</a> в течение 24 часов.
                 </p>
                 <form netlify method="POST" name="footer-cta" class="footer__newsletter">
                     <input type="hidden" name="form-name" value="footer-cta" />
-                    <input type="email" name="email" placeholder="Your email" required />
+                    <input type="email" name="email" placeholder="Ваш email" required />
 
                     <button type="submit" class="primary-btn" style="margin-top: 10px; width: 100%">
-                        free request
+                        Бесплатный запрос
                     </button>
                 </form>
             </div>
@@ -298,11 +297,11 @@
 
         <div class="footer__bottom">
             <p class="footer__bottom-copyright">
-                &copy; 2025 Kolibri Web Designs. All rights reserved.
+                © 2025 Kolibri Web Designs. Все права защищены.
             </p>
             <div class="footer__bottom-links">
-                <a href="#" class="footer__bottom-link">Privacy Policy</a>
-                <a href="#" class="footer__bottom-link">Terms of Service</a>
+                <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+                <a href="#" class="footer__bottom-link">Условия обслуживания</a>
             </div>
         </div>
     </footer>
@@ -316,7 +315,7 @@
                 event.preventDefault();
                 // Form submission handling would go here
                 alert(
-                    "Thank you for your message! We will get back to you soon.",
+                    "Спасибо за ваше сообщение! Мы скоро с вами свяжемся.",
                 );
             });
     </script>
