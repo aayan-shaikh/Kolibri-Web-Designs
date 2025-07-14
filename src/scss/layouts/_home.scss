@@ -2,7 +2,9 @@
 @use "../abstracts" as *;
 @use "../base/" as *;
 
-
+.nav-btn {
+    font-weight: 900;
+}
 
 body {
     font-family: $heading-font;
@@ -167,6 +169,7 @@ p {
     h1,
     h2 {
         margin: auto;
+        color: $text;
     }
 
     .text {

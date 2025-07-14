@@ -5,11 +5,13 @@
 body {
     background: $secondary;
 }
+
 @media (min-width: 900px) {
     .wrapper {
         padding-inline: 8rem;
     }
 }
+
 #contact-hero {
     margin-top: 4rem;
     background-color: darken($secondary, 3%);
@@ -75,11 +77,9 @@ body {
     }
 
     .contact-info {
-        background: linear-gradient(
-            145deg,
-            lighten($secondary, 5%),
-            $secondary
-        );
+        background: linear-gradient(145deg,
+                lighten($secondary, 5%),
+                $secondary );
         padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 8px 20px rgba(darken($secondary, 10%), 0.3);
@@ -144,11 +144,9 @@ body {
     }
 
     .contact-form {
-        background: linear-gradient(
-            145deg,
-            lighten($secondary, 8%),
-            lighten($secondary, 3%)
-        );
+        background: linear-gradient(145deg,
+                lighten($secondary, 8%),
+                lighten($secondary, 3%));
         padding: 2.5rem;
         border-radius: 8px;
         box-shadow: 0 10px 25px rgba(darken($secondary, 15%), 0.3);

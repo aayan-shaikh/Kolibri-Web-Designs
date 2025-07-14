@@ -2,6 +2,10 @@
 @use "../base/" as *;
 
 /* @use "../components/" as *; */
+h2 {
+    font-size: 2rem;
+}
+
 body {
     font-family: $heading-font;
     color: $text;
@@ -178,11 +182,14 @@ section {
 }
 
 #web-design-and-dev {
+    // outline: 10px solid lime;
 
+    max-width: 80vw;
     display: flex;
     padding-top: 4rem;
-    padding-inline: 1.5rem;
+    // padding-inline: 6rem;
     margin-inline: auto;
+
 
 
     h1 {
@@ -349,7 +356,7 @@ section {
         border: none;
         padding: 1rem 2.5rem;
         font-size: 1.1rem;
-        font-weight: 600;
+        font-weight: 900;
         border-radius: 50px;
         cursor: pointer;
         transition: all 0.3s ease;
