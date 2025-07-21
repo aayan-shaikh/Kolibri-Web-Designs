@@ -182,19 +182,13 @@ section {
 }
 
 #web-design-and-dev {
-    // outline: 10px solid lime;
-
     max-width: 80vw;
     display: flex;
     padding-top: 4rem;
-    // padding-inline: 6rem;
     margin-inline: auto;
-
-
 
     h1 {
         color: $text;
-
         margin-bottom: 2rem;
     }
 
@@ -503,7 +497,7 @@ section {
 
     .pricing-benefits {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
         margin-bottom: 4rem;
 
@@ -552,7 +546,7 @@ section {
 
     .pricing-options {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
 
         @include responsive(tablet) {
@@ -562,6 +556,7 @@ section {
         }
 
         .pricing-card {
+            grid-template-columns: subgrid;
             background: linear-gradient(145deg,
                     lighten($secondary, 8%),
                     lighten($secondary, 3%));
@@ -687,6 +682,7 @@ section {
                     font-weight: 600;
                     cursor: pointer;
                     transition: all 0.3s ease;
+                    margin-top: auto;
 
                     &:hover {
                         background: linear-gradient(135deg,
